@@ -1,0 +1,3376 @@
+// tetin file version 1.1
+// written by ICEM CFD - version 22.2 on Mon Sep  9 10:07:41 2024
+
+set_triangulation_tolerance 9.9999999e-09
+define_family POINTS tetra_size 0 color 0
+define_family EDGE_CURVES tetra_size 500 color 0
+define_family BOTTOM color 5125117
+define_family TOP color 14693271
+define_family FRONT color 14496666
+define_family BACK color 6748211
+define_family RIGHT color 5714940
+define_family LEFT color 12827187
+define_family INTLENS_G_S internal_wall 1 tetra_size 50 color 14849075
+define_family FRAC0_S internal_wall 1 tetra_size 0 color 16165097
+define_family FRACTURE_CURVE0 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family INTERSECT_G_S tetra_size 0 color 16711680
+define_family FRAC10_S internal_wall 1 tetra_size 0 color 16351346
+define_family FRACTURE_CURVE10 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC11_S internal_wall 1 tetra_size 0 color 4230510
+define_family FRACTURE_CURVE11 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC12_S internal_wall 1 tetra_size 0 color 7990433
+define_family FRACTURE_CURVE12 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC13_S internal_wall 1 tetra_size 0 color 2847286
+define_family FRACTURE_CURVE13 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC14_S internal_wall 1 tetra_size 0 color 9594806
+define_family FRACTURE_CURVE14 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC15_S internal_wall 1 tetra_size 0 color 7746858
+define_family FRACTURE_CURVE15 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC16_S internal_wall 1 tetra_size 0 color 15392243
+define_family FRACTURE_CURVE16 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC17_S internal_wall 1 tetra_size 0 color 340302
+define_family FRACTURE_CURVE17 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC18_S internal_wall 1 tetra_size 0 color 651471
+define_family FRACTURE_CURVE18 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC19_S internal_wall 1 tetra_size 0 color 734665
+define_family FRACTURE_CURVE19 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC1_S internal_wall 1 tetra_size 0 color 11581845
+define_family FRACTURE_CURVE1 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC20_S internal_wall 1 tetra_size 0 color 13276891
+define_family FRACTURE_CURVE20 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC21_S internal_wall 1 tetra_size 0 color 135932
+define_family FRACTURE_CURVE21 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC22_S internal_wall 1 tetra_size 0 color 12587038
+define_family FRACTURE_CURVE22 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC23_S internal_wall 1 tetra_size 0 color 15472042
+define_family FRACTURE_CURVE23 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC24_S internal_wall 1 tetra_size 0 color 2147091
+define_family FRACTURE_CURVE24 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC2_S internal_wall 1 tetra_size 0 color 13517633
+define_family FRACTURE_CURVE2 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC3_S internal_wall 1 tetra_size 0 color 8548145
+define_family FRACTURE_CURVE3 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC4_S internal_wall 1 tetra_size 0 color 12874748
+define_family FRACTURE_CURVE4 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC5_S internal_wall 1 tetra_size 0 color 6659445
+define_family FRACTURE_CURVE5 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC6_S internal_wall 1 tetra_size 0 color 10301397
+define_family FRACTURE_CURVE6 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC7_S internal_wall 1 tetra_size 0 color 12033007
+define_family FRACTURE_CURVE7 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC8_S internal_wall 1 tetra_size 0 color 11582212
+define_family FRACTURE_CURVE8 internal_wall 1 tetra_size 7.41641 color 16711680
+define_family FRAC9_S internal_wall 1 tetra_size 0 color 14954451
+define_family FRACTURE_CURVE9 internal_wall 1 tetra_size 7.41641 color 16711680
+
+prescribed_point -1000 -1000 -100 family EDGE_CURVES name POINT1
+prescribed_point -1000 -1000 100 family EDGE_CURVES name POINT2
+prescribed_point -1000 1000 100 family EDGE_CURVES name POINT3
+prescribed_point -1000 1000 -100 family EDGE_CURVES name POINT4
+prescribed_point 1000 1000 -100 family EDGE_CURVES name POINT5
+prescribed_point 1000 1000 100 family EDGE_CURVES name POINT6
+prescribed_point 1000 -1000 -100 family EDGE_CURVES name POINT7
+prescribed_point 1000 -1000 100 family EDGE_CURVES name POINT8
+prescribed_point -1000 -1000 -100 family EDGE_CURVES name POINT1.8
+prescribed_point -1000 -1000 100 family EDGE_CURVES name POINT2.8
+prescribed_point -1000 1000 100 family EDGE_CURVES name POINT3.8
+prescribed_point -1000 1000 -100 family EDGE_CURVES name POINT4.8
+prescribed_point 1000 1000 -100 family EDGE_CURVES name POINT5.8
+prescribed_point 1000 1000 100 family EDGE_CURVES name POINT6.8
+prescribed_point 1000 -1000 -100 family EDGE_CURVES name POINT7.8
+prescribed_point 1000 -1000 100 family EDGE_CURVES name POINT8.8
+prescribed_point 0 0 0 family INTLENS_G_S name SOLID1/p1
+prescribed_point 0 0 70 family INTLENS_G_S name SOLID1/p2
+prescribed_point 0 0 0 family INTLENS_G_S name SOLID1/p1.2
+prescribed_point 0 0 70 family INTLENS_G_S name SOLID1/p2.2
+prescribed_point 0 9.9803 79.3726 family FRACTURE_CURVE0 name .p1
+prescribed_point 0 8.44303 85.3587 family FRACTURE_CURVE0 name .p2
+prescribed_point 0 8.44303 85.3587 family FRACTURE_CURVE0 name .p1.2
+prescribed_point 0 3.68081 89.2979 family FRACTURE_CURVE0 name .p2.2
+prescribed_point 0 3.68081 89.2979 family FRACTURE_CURVE0 name .p1.3
+prescribed_point 0 -2.48735 89.6857 family FRACTURE_CURVE0 name .p2.3
+prescribed_point 0 -2.48735 89.6857 family FRACTURE_CURVE0 name .p1.4
+prescribed_point 0 -7.70543 86.3739 family FRACTURE_CURVE0 name .p2.4
+prescribed_point 0 -7.70543 86.3739 family FRACTURE_CURVE0 name .p1.5
+prescribed_point 0 -9.9803 80.6274 family FRACTURE_CURVE0 name .p2.5
+prescribed_point 0 -9.9803 80.6274 family FRACTURE_CURVE0 name .p1.6
+prescribed_point 0 -8.44303 74.6413 family FRACTURE_CURVE0 name .p2.6
+prescribed_point 0 -8.44303 74.6413 family FRACTURE_CURVE0 name .p1.7
+prescribed_point 0 -3.68081 70.7021 family FRACTURE_CURVE0 name .p2.7
+prescribed_point 0 -3.68081 70.7021 family FRACTURE_CURVE0 name .p1.8
+prescribed_point 0 2.48735 70.3143 family FRACTURE_CURVE0 name .p2.8
+prescribed_point 0 2.48735 70.3143 family FRACTURE_CURVE0 name .p1.9
+prescribed_point 0 7.70543 73.6261 family FRACTURE_CURVE0 name .p2.9
+prescribed_point 0 7.70543 73.6261 family FRACTURE_CURVE0 name .p1.10
+prescribed_point 0 9.9803 79.3726 family FRACTURE_CURVE0 name .p2.10
+prescribed_point -20 8.62458 85.0613 family FRACTURE_CURVE10 name .p1.11
+prescribed_point -20 4.00249 89.1641 family FRACTURE_CURVE10 name .p2.11
+prescribed_point -20 4.00249 89.1641 family FRACTURE_CURVE10 name .p1.12
+prescribed_point -20 -2.14842 89.7665 family FRACTURE_CURVE10 name .p2.12
+prescribed_point -20 -2.14842 89.7665 family FRACTURE_CURVE10 name .p1.13
+prescribed_point -20 -7.47871 86.6384 family FRACTURE_CURVE10 name .p2.13
+prescribed_point -20 -7.47871 86.6384 family FRACTURE_CURVE10 name .p1.14
+prescribed_point -20 -9.95238 80.9747 family FRACTURE_CURVE10 name .p2.14
+prescribed_point -20 -9.95238 80.9747 family FRACTURE_CURVE10 name .p1.15
+prescribed_point -20 -8.62458 74.9387 family FRACTURE_CURVE10 name .p2.15
+prescribed_point -20 -8.62458 74.9387 family FRACTURE_CURVE10 name .p1.16
+prescribed_point -20 -4.00249 70.8359 family FRACTURE_CURVE10 name .p2.16
+prescribed_point -20 -4.00249 70.8359 family FRACTURE_CURVE10 name .p1.17
+prescribed_point -20 2.14842 70.2335 family FRACTURE_CURVE10 name .p2.17
+prescribed_point -20 2.14842 70.2335 family FRACTURE_CURVE10 name .p1.18
+prescribed_point -20 7.47871 73.3616 family FRACTURE_CURVE10 name .p2.18
+prescribed_point -20 7.47871 73.3616 family FRACTURE_CURVE10 name .p1.19
+prescribed_point -20 9.95238 79.0253 family FRACTURE_CURVE10 name .p2.19
+prescribed_point -20 9.95238 79.0253 family FRACTURE_CURVE10 name .p1.20
+prescribed_point -20 8.62458 85.0613 family FRACTURE_CURVE10 name .p2.20
+prescribed_point -20 28.9324 84.4958 family FRACTURE_CURVE11 name .p1.21
+prescribed_point -20 24.5839 88.8875 family FRACTURE_CURVE11 name .p2.21
+prescribed_point -20 24.5839 88.8875 family FRACTURE_CURVE11 name .p1.22
+prescribed_point -20 18.4845 89.8845 family FRACTURE_CURVE11 name .p2.22
+prescribed_point -20 18.4845 89.8845 family FRACTURE_CURVE11 name .p1.23
+prescribed_point -20 12.964 87.1059 family FRACTURE_CURVE11 name .p2.23
+prescribed_point -20 12.964 87.1059 family FRACTURE_CURVE11 name .p1.24
+prescribed_point -20 10.131 81.6131 family FRACTURE_CURVE11 name .p2.24
+prescribed_point -20 10.131 81.6131 family FRACTURE_CURVE11 name .p1.25
+prescribed_point -20 11.0676 75.5042 family FRACTURE_CURVE11 name .p2.25
+prescribed_point -20 11.0676 75.5042 family FRACTURE_CURVE11 name .p1.26
+prescribed_point -20 15.4161 71.1125 family FRACTURE_CURVE11 name .p2.26
+prescribed_point -20 15.4161 71.1125 family FRACTURE_CURVE11 name .p1.27
+prescribed_point -20 21.5155 70.1155 family FRACTURE_CURVE11 name .p2.27
+prescribed_point -20 21.5155 70.1155 family FRACTURE_CURVE11 name .p1.28
+prescribed_point -20 27.036 72.8941 family FRACTURE_CURVE11 name .p2.28
+prescribed_point -20 27.036 72.8941 family FRACTURE_CURVE11 name .p1.29
+prescribed_point -20 29.869 78.3869 family FRACTURE_CURVE11 name .p2.29
+prescribed_point -20 29.869 78.3869 family FRACTURE_CURVE11 name .p1.30
+prescribed_point -20 28.9324 84.4958 family FRACTURE_CURVE11 name .p2.30
+prescribed_point -20 45.4637 88.3754 family FRACTURE_CURVE12 name .p1.31
+prescribed_point -20 39.4973 89.9874 family FRACTURE_CURVE12 name .p2.31
+prescribed_point -20 39.4973 89.9874 family FRACTURE_CURVE12 name .p1.32
+prescribed_point -20 33.7229 87.7845 family FRACTURE_CURVE12 name .p2.32
+prescribed_point -20 33.7229 87.7845 family FRACTURE_CURVE12 name .p1.33
+prescribed_point -20 30.3461 82.6082 family FRACTURE_CURVE12 name .p2.33
+prescribed_point -20 30.3461 82.6082 family FRACTURE_CURVE12 name .p1.34
+prescribed_point -20 30.6568 76.4356 family FRACTURE_CURVE12 name .p2.34
+prescribed_point -20 30.6568 76.4356 family FRACTURE_CURVE12 name .p1.35
+prescribed_point -20 34.5363 71.6246 family FRACTURE_CURVE12 name .p2.35
+prescribed_point -20 34.5363 71.6246 family FRACTURE_CURVE12 name .p1.36
+prescribed_point -20 40.5027 70.0126 family FRACTURE_CURVE12 name .p2.36
+prescribed_point -20 40.5027 70.0126 family FRACTURE_CURVE12 name .p1.37
+prescribed_point -20 46.2771 72.2155 family FRACTURE_CURVE12 name .p2.37
+prescribed_point -20 46.2771 72.2155 family FRACTURE_CURVE12 name .p1.38
+prescribed_point -20 49.6539 77.3918 family FRACTURE_CURVE12 name .p2.38
+prescribed_point -20 49.6539 77.3918 family FRACTURE_CURVE12 name .p1.39
+prescribed_point -20 49.3432 83.5644 family FRACTURE_CURVE12 name .p2.39
+prescribed_point -20 49.3432 83.5644 family FRACTURE_CURVE12 name .p1.40
+prescribed_point -20 45.4637 88.3754 family FRACTURE_CURVE12 name .p2.40
+prescribed_point -20 -10.9654 84.2868 family FRACTURE_CURVE13 name .p1.41
+prescribed_point -20 -15.2106 88.7785 family FRACTURE_CURVE13 name .p2.41
+prescribed_point -20 -15.2106 88.7785 family FRACTURE_CURVE13 name .p1.42
+prescribed_point -20 -21.2852 89.9171 family FRACTURE_CURVE13 name .p2.42
+prescribed_point -20 -21.2852 89.9171 family FRACTURE_CURVE13 name .p1.43
+prescribed_point -20 -26.8688 87.2677 family FRACTURE_CURVE13 name .p2.43
+prescribed_point -20 -26.8688 87.2677 family FRACTURE_CURVE13 name .p1.44
+prescribed_point -20 -29.8288 81.8423 family FRACTURE_CURVE13 name .p2.44
+prescribed_point -20 -29.8288 81.8423 family FRACTURE_CURVE13 name .p1.45
+prescribed_point -20 -29.0346 75.7132 family FRACTURE_CURVE13 name .p2.45
+prescribed_point -20 -29.0346 75.7132 family FRACTURE_CURVE13 name .p1.46
+prescribed_point -20 -24.7894 71.2215 family FRACTURE_CURVE13 name .p2.46
+prescribed_point -20 -24.7894 71.2215 family FRACTURE_CURVE13 name .p1.47
+prescribed_point -20 -18.7148 70.0829 family FRACTURE_CURVE13 name .p2.47
+prescribed_point -20 -18.7148 70.0829 family FRACTURE_CURVE13 name .p1.48
+prescribed_point -20 -13.1312 72.7323 family FRACTURE_CURVE13 name .p2.48
+prescribed_point -20 -13.1312 72.7323 family FRACTURE_CURVE13 name .p1.49
+prescribed_point -20 -10.1712 78.1577 family FRACTURE_CURVE13 name .p2.49
+prescribed_point -20 -10.1712 78.1577 family FRACTURE_CURVE13 name .p1.50
+prescribed_point -20 -10.9654 84.2868 family FRACTURE_CURVE13 name .p2.50
+prescribed_point -20 -33.3281 87.4489 family FRACTURE_CURVE14 name .p1.51
+prescribed_point -20 -38.9807 89.9479 family FRACTURE_CURVE14 name .p2.51
+prescribed_point -20 -38.9807 89.9479 family FRACTURE_CURVE14 name .p1.52
+prescribed_point -20 -45.0226 88.6472 family FRACTURE_CURVE14 name .p2.52
+prescribed_point -20 -45.0226 88.6472 family FRACTURE_CURVE14 name .p1.53
+prescribed_point -20 -49.146 84.0435 family FRACTURE_CURVE14 name .p2.53
+prescribed_point -20 -49.146 84.0435 family FRACTURE_CURVE14 name .p1.54
+prescribed_point -20 -49.776 77.8954 family FRACTURE_CURVE14 name .p2.54
+prescribed_point -20 -49.776 77.8954 family FRACTURE_CURVE14 name .p1.55
+prescribed_point -20 -46.6719 72.5511 family FRACTURE_CURVE14 name .p2.55
+prescribed_point -20 -46.6719 72.5511 family FRACTURE_CURVE14 name .p1.56
+prescribed_point -20 -41.0193 70.0521 family FRACTURE_CURVE14 name .p2.56
+prescribed_point -20 -41.0193 70.0521 family FRACTURE_CURVE14 name .p1.57
+prescribed_point -20 -34.9774 71.3528 family FRACTURE_CURVE14 name .p2.57
+prescribed_point -20 -34.9774 71.3528 family FRACTURE_CURVE14 name .p1.58
+prescribed_point -20 -30.854 75.9565 family FRACTURE_CURVE14 name .p2.58
+prescribed_point -20 -30.854 75.9565 family FRACTURE_CURVE14 name .p1.59
+prescribed_point -20 -30.224 82.1046 family FRACTURE_CURVE14 name .p2.59
+prescribed_point -20 -30.224 82.1046 family FRACTURE_CURVE14 name .p1.60
+prescribed_point -20 -33.3281 87.4489 family FRACTURE_CURVE14 name .p2.60
+prescribed_point 40 9.99948 79.8977 family FRACTURE_CURVE15 name .p1.61
+prescribed_point 40 8.14987 85.7948 family FRACTURE_CURVE15 name .p2.61
+prescribed_point 40 8.14987 85.7948 family FRACTURE_CURVE15 name .p1.62
+prescribed_point 40 3.18729 89.4785 family FRACTURE_CURVE15 name .p2.62
+prescribed_point 40 3.18729 89.4785 family FRACTURE_CURVE15 name .p1.63
+prescribed_point 40 -2.99273 89.5417 family FRACTURE_CURVE15 name .p2.63
+prescribed_point 40 -2.99273 89.5417 family FRACTURE_CURVE15 name .p1.64
+prescribed_point 40 -8.02963 85.9603 family FRACTURE_CURVE15 name .p2.64
+prescribed_point 40 -8.02963 85.9603 family FRACTURE_CURVE15 name .p1.65
+prescribed_point 40 -9.99948 80.1023 family FRACTURE_CURVE15 name .p2.65
+prescribed_point 40 -9.99948 80.1023 family FRACTURE_CURVE15 name .p1.66
+prescribed_point 40 -8.14987 74.2052 family FRACTURE_CURVE15 name .p2.66
+prescribed_point 40 -8.14987 74.2052 family FRACTURE_CURVE15 name .p1.67
+prescribed_point 40 -3.18729 70.5215 family FRACTURE_CURVE15 name .p2.67
+prescribed_point 40 -3.18729 70.5215 family FRACTURE_CURVE15 name .p1.68
+prescribed_point 40 2.99273 70.4583 family FRACTURE_CURVE15 name .p2.68
+prescribed_point 40 2.99273 70.4583 family FRACTURE_CURVE15 name .p1.69
+prescribed_point 40 8.02963 74.0397 family FRACTURE_CURVE15 name .p2.69
+prescribed_point 40 8.02963 74.0397 family FRACTURE_CURVE15 name .p1.70
+prescribed_point 40 9.99948 79.8977 family FRACTURE_CURVE15 name .p2.70
+prescribed_point 40 28.2529 85.6471 family FRACTURE_CURVE16 name .p1.71
+prescribed_point 40 23.3575 89.4195 family FRACTURE_CURVE16 name .p2.71
+prescribed_point 40 23.3575 89.4195 family FRACTURE_CURVE16 name .p1.72
+prescribed_point 40 17.1796 89.594 family FRACTURE_CURVE16 name .p2.72
+prescribed_point 40 17.1796 89.594 family FRACTURE_CURVE16 name .p1.73
+prescribed_point 40 12.079 86.1039 family FRACTURE_CURVE16 name .p2.73
+prescribed_point 40 12.079 86.1039 family FRACTURE_CURVE16 name .p1.74
+prescribed_point 40 10.004 80.2824 family FRACTURE_CURVE16 name .p2.74
+prescribed_point 40 10.004 80.2824 family FRACTURE_CURVE16 name .p1.75
+prescribed_point 40 11.7471 74.3529 family FRACTURE_CURVE16 name .p2.75
+prescribed_point 40 11.7471 74.3529 family FRACTURE_CURVE16 name .p1.76
+prescribed_point 40 16.6425 70.5805 family FRACTURE_CURVE16 name .p2.76
+prescribed_point 40 16.6425 70.5805 family FRACTURE_CURVE16 name .p1.77
+prescribed_point 40 22.8204 70.406 family FRACTURE_CURVE16 name .p2.77
+prescribed_point 40 22.8204 70.406 family FRACTURE_CURVE16 name .p1.78
+prescribed_point 40 27.921 73.8961 family FRACTURE_CURVE16 name .p2.78
+prescribed_point 40 27.921 73.8961 family FRACTURE_CURVE16 name .p1.79
+prescribed_point 40 29.996 79.7176 family FRACTURE_CURVE16 name .p2.79
+prescribed_point 40 29.996 79.7176 family FRACTURE_CURVE16 name .p1.80
+prescribed_point 40 28.2529 85.6471 family FRACTURE_CURVE16 name .p2.80
+prescribed_point 40 45.4368 88.393 family FRACTURE_CURVE17 name .p1.81
+prescribed_point 40 39.4652 89.9857 family FRACTURE_CURVE17 name .p2.81
+prescribed_point 40 39.4652 89.9857 family FRACTURE_CURVE17 name .p1.82
+prescribed_point 40 33.6979 87.7642 family FRACTURE_CURVE17 name .p2.82
+prescribed_point 40 33.6979 87.7642 family FRACTURE_CURVE17 name .p1.83
+prescribed_point 40 30.3378 82.5771 family FRACTURE_CURVE17 name .p2.83
+prescribed_point 40 30.3378 82.5771 family FRACTURE_CURVE17 name .p1.84
+prescribed_point 40 30.6683 76.4056 family FRACTURE_CURVE17 name .p2.84
+prescribed_point 40 30.6683 76.4056 family FRACTURE_CURVE17 name .p1.85
+prescribed_point 40 34.5632 71.607 family FRACTURE_CURVE17 name .p2.85
+prescribed_point 40 34.5632 71.607 family FRACTURE_CURVE17 name .p1.86
+prescribed_point 40 40.5348 70.0143 family FRACTURE_CURVE17 name .p2.86
+prescribed_point 40 40.5348 70.0143 family FRACTURE_CURVE17 name .p1.87
+prescribed_point 40 46.3021 72.2358 family FRACTURE_CURVE17 name .p2.87
+prescribed_point 40 46.3021 72.2358 family FRACTURE_CURVE17 name .p1.88
+prescribed_point 40 49.6622 77.4229 family FRACTURE_CURVE17 name .p2.88
+prescribed_point 40 49.6622 77.4229 family FRACTURE_CURVE17 name .p1.89
+prescribed_point 40 49.3317 83.5944 family FRACTURE_CURVE17 name .p2.89
+prescribed_point 40 49.3317 83.5944 family FRACTURE_CURVE17 name .p1.90
+prescribed_point 40 45.4368 88.393 family FRACTURE_CURVE17 name .p2.90
+prescribed_point 40 -10.0189 80.6146 family FRACTURE_CURVE18 name .p1.91
+prescribed_point 40 -12.2864 86.364 family FRACTURE_CURVE18 name .p2.91
+prescribed_point 40 -12.2864 86.364 family FRACTURE_CURVE18 name .p1.92
+prescribed_point 40 -17.5002 89.6825 family FRACTURE_CURVE18 name .p2.92
+prescribed_point 40 -17.5002 89.6825 family FRACTURE_CURVE18 name .p1.93
+prescribed_point 40 -23.6689 89.3027 family FRACTURE_CURVE18 name .p2.93
+prescribed_point 40 -23.6689 89.3027 family FRACTURE_CURVE18 name .p1.94
+prescribed_point 40 -28.4361 85.3695 family FRACTURE_CURVE18 name .p2.94
+prescribed_point 40 -28.4361 85.3695 family FRACTURE_CURVE18 name .p1.95
+prescribed_point 40 -29.9811 79.3854 family FRACTURE_CURVE18 name .p2.95
+prescribed_point 40 -29.9811 79.3854 family FRACTURE_CURVE18 name .p1.96
+prescribed_point 40 -27.7136 73.636 family FRACTURE_CURVE18 name .p2.96
+prescribed_point 40 -27.7136 73.636 family FRACTURE_CURVE18 name .p1.97
+prescribed_point 40 -22.4998 70.3175 family FRACTURE_CURVE18 name .p2.97
+prescribed_point 40 -22.4998 70.3175 family FRACTURE_CURVE18 name .p1.98
+prescribed_point 40 -16.3311 70.6973 family FRACTURE_CURVE18 name .p2.98
+prescribed_point 40 -16.3311 70.6973 family FRACTURE_CURVE18 name .p1.99
+prescribed_point 40 -11.5639 74.6305 family FRACTURE_CURVE18 name .p2.99
+prescribed_point 40 -11.5639 74.6305 family FRACTURE_CURVE18 name .p1.100
+prescribed_point 40 -10.0189 80.6146 family FRACTURE_CURVE18 name .p2.100
+prescribed_point 40 -30.8557 75.9525 family FRACTURE_CURVE19 name .p1.101
+prescribed_point 40 -30.2231 82.1003 family FRACTURE_CURVE19 name .p2.101
+prescribed_point 40 -30.2231 82.1003 family FRACTURE_CURVE19 name .p1.102
+prescribed_point 40 -33.3248 87.4459 family FRACTURE_CURVE19 name .p2.102
+prescribed_point 40 -33.3248 87.4459 family FRACTURE_CURVE19 name .p1.103
+prescribed_point 40 -38.9763 89.9475 family FRACTURE_CURVE19 name .p2.103
+prescribed_point 40 -38.9763 89.9475 family FRACTURE_CURVE19 name .p1.104
+prescribed_point 40 -45.0188 88.6494 family FRACTURE_CURVE19 name .p2.104
+prescribed_point 40 -45.0188 88.6494 family FRACTURE_CURVE19 name .p1.105
+prescribed_point 40 -49.1443 84.0475 family FRACTURE_CURVE19 name .p2.105
+prescribed_point 40 -49.1443 84.0475 family FRACTURE_CURVE19 name .p1.106
+prescribed_point 40 -49.7769 77.8997 family FRACTURE_CURVE19 name .p2.106
+prescribed_point 40 -49.7769 77.8997 family FRACTURE_CURVE19 name .p1.107
+prescribed_point 40 -46.6752 72.5541 family FRACTURE_CURVE19 name .p2.107
+prescribed_point 40 -46.6752 72.5541 family FRACTURE_CURVE19 name .p1.108
+prescribed_point 40 -41.0237 70.0525 family FRACTURE_CURVE19 name .p2.108
+prescribed_point 40 -41.0237 70.0525 family FRACTURE_CURVE19 name .p1.109
+prescribed_point 40 -34.9812 71.3506 family FRACTURE_CURVE19 name .p2.109
+prescribed_point 40 -34.9812 71.3506 family FRACTURE_CURVE19 name .p1.110
+prescribed_point 40 -30.8557 75.9525 family FRACTURE_CURVE19 name .p2.110
+prescribed_point 0 27.7519 86.3173 family FRACTURE_CURVE1 name .p1.111
+prescribed_point 0 22.5582 89.6673 family FRACTURE_CURVE1 name .p2.111
+prescribed_point 0 22.5582 89.6673 family FRACTURE_CURVE1 name .p1.112
+prescribed_point 0 16.3873 89.3246 family FRACTURE_CURVE1 name .p2.112
+prescribed_point 0 16.3873 89.3246 family FRACTURE_CURVE1 name .p1.113
+prescribed_point 0 11.5964 85.4203 family FRACTURE_CURVE1 name .p2.113
+prescribed_point 0 11.5964 85.4203 family FRACTURE_CURVE1 name .p1.114
+prescribed_point 0 10.0154 79.4456 family FRACTURE_CURVE1 name .p2.114
+prescribed_point 0 10.0154 79.4456 family FRACTURE_CURVE1 name .p1.115
+prescribed_point 0 12.2481 73.6827 family FRACTURE_CURVE1 name .p2.115
+prescribed_point 0 12.2481 73.6827 family FRACTURE_CURVE1 name .p1.116
+prescribed_point 0 17.4418 70.3327 family FRACTURE_CURVE1 name .p2.116
+prescribed_point 0 17.4418 70.3327 family FRACTURE_CURVE1 name .p1.117
+prescribed_point 0 23.6127 70.6754 family FRACTURE_CURVE1 name .p2.117
+prescribed_point 0 23.6127 70.6754 family FRACTURE_CURVE1 name .p1.118
+prescribed_point 0 28.4036 74.5797 family FRACTURE_CURVE1 name .p2.118
+prescribed_point 0 28.4036 74.5797 family FRACTURE_CURVE1 name .p1.119
+prescribed_point 0 29.9846 80.5544 family FRACTURE_CURVE1 name .p2.119
+prescribed_point 0 29.9846 80.5544 family FRACTURE_CURVE1 name .p1.120
+prescribed_point 0 27.7519 86.3173 family FRACTURE_CURVE1 name .p2.120
+prescribed_point -40 1.2873 89.9168 family FRACTURE_CURVE20 name .p1.121
+prescribed_point -40 -4.7875 88.7795 family FRACTURE_CURVE20 name .p2.121
+prescribed_point -40 -4.7875 88.7795 family FRACTURE_CURVE20 name .p1.122
+prescribed_point -40 -9.03364 84.2888 family FRACTURE_CURVE20 name .p2.122
+prescribed_point -40 -9.03364 84.2888 family FRACTURE_CURVE20 name .p1.123
+prescribed_point -40 -9.82923 78.1598 family FRACTURE_CURVE20 name .p2.123
+prescribed_point -40 -9.82923 78.1598 family FRACTURE_CURVE20 name .p1.124
+prescribed_point -40 -6.87039 72.7338 family FRACTURE_CURVE20 name .p2.124
+prescribed_point -40 -6.87039 72.7338 family FRACTURE_CURVE20 name .p1.125
+prescribed_point -40 -1.2873 70.0832 family FRACTURE_CURVE20 name .p2.125
+prescribed_point -40 -1.2873 70.0832 family FRACTURE_CURVE20 name .p1.126
+prescribed_point -40 4.7875 71.2205 family FRACTURE_CURVE20 name .p2.126
+prescribed_point -40 4.7875 71.2205 family FRACTURE_CURVE20 name .p1.127
+prescribed_point -40 9.03364 75.7112 family FRACTURE_CURVE20 name .p2.127
+prescribed_point -40 9.03364 75.7112 family FRACTURE_CURVE20 name .p1.128
+prescribed_point -40 9.82923 81.8402 family FRACTURE_CURVE20 name .p2.128
+prescribed_point -40 9.82923 81.8402 family FRACTURE_CURVE20 name .p1.129
+prescribed_point -40 6.87039 87.2662 family FRACTURE_CURVE20 name .p2.129
+prescribed_point -40 6.87039 87.2662 family FRACTURE_CURVE20 name .p1.130
+prescribed_point -40 1.2873 89.9168 family FRACTURE_CURVE20 name .p2.130
+prescribed_point -40 23.0345 89.5285 family FRACTURE_CURVE21 name .p1.131
+prescribed_point -40 16.8543 89.4923 family FRACTURE_CURVE21 name .p2.131
+prescribed_point -40 16.8543 89.4923 family FRACTURE_CURVE21 name .p1.132
+prescribed_point -40 11.8756 85.8304 family FRACTURE_CURVE21 name .p2.132
+prescribed_point -40 11.8756 85.8304 family FRACTURE_CURVE21 name .p1.133
+prescribed_point -40 10.0002 79.9415 family FRACTURE_CURVE21 name .p2.133
+prescribed_point -40 10.0002 79.9415 family FRACTURE_CURVE21 name .p1.134
+prescribed_point -40 11.9443 74.0749 family FRACTURE_CURVE21 name .p2.134
+prescribed_point -40 11.9443 74.0749 family FRACTURE_CURVE21 name .p1.135
+prescribed_point -40 16.9655 70.4715 family FRACTURE_CURVE21 name .p2.135
+prescribed_point -40 16.9655 70.4715 family FRACTURE_CURVE21 name .p1.136
+prescribed_point -40 23.1457 70.5077 family FRACTURE_CURVE21 name .p2.136
+prescribed_point -40 23.1457 70.5077 family FRACTURE_CURVE21 name .p1.137
+prescribed_point -40 28.1244 74.1696 family FRACTURE_CURVE21 name .p2.137
+prescribed_point -40 28.1244 74.1696 family FRACTURE_CURVE21 name .p1.138
+prescribed_point -40 29.9998 80.0585 family FRACTURE_CURVE21 name .p2.138
+prescribed_point -40 29.9998 80.0585 family FRACTURE_CURVE21 name .p1.139
+prescribed_point -40 28.0557 85.9251 family FRACTURE_CURVE21 name .p2.139
+prescribed_point -40 28.0557 85.9251 family FRACTURE_CURVE21 name .p1.140
+prescribed_point -40 23.0345 89.5285 family FRACTURE_CURVE21 name .p2.140
+prescribed_point -40 48.5597 85.1703 family FRACTURE_CURVE22 name .p1.141
+prescribed_point -40 43.8859 89.2141 family FRACTURE_CURVE22 name .p2.141
+prescribed_point -40 43.8859 89.2141 family FRACTURE_CURVE22 name .p1.142
+prescribed_point -40 37.7278 89.7384 family FRACTURE_CURVE22 name .p2.142
+prescribed_point -40 37.7278 89.7384 family FRACTURE_CURVE22 name .p1.143
+prescribed_point -40 32.4377 86.543 family FRACTURE_CURVE22 name .p2.143
+prescribed_point -40 32.4377 86.543 family FRACTURE_CURVE22 name .p1.144
+prescribed_point -40 30.0361 80.8484 family FRACTURE_CURVE22 name .p2.144
+prescribed_point -40 30.0361 80.8484 family FRACTURE_CURVE22 name .p1.145
+prescribed_point -40 31.4403 74.8297 family FRACTURE_CURVE22 name .p2.145
+prescribed_point -40 31.4403 74.8297 family FRACTURE_CURVE22 name .p1.146
+prescribed_point -40 36.1141 70.7859 family FRACTURE_CURVE22 name .p2.146
+prescribed_point -40 36.1141 70.7859 family FRACTURE_CURVE22 name .p1.147
+prescribed_point -40 42.2722 70.2616 family FRACTURE_CURVE22 name .p2.147
+prescribed_point -40 42.2722 70.2616 family FRACTURE_CURVE22 name .p1.148
+prescribed_point -40 47.5623 73.457 family FRACTURE_CURVE22 name .p2.148
+prescribed_point -40 47.5623 73.457 family FRACTURE_CURVE22 name .p1.149
+prescribed_point -40 49.9639 79.1516 family FRACTURE_CURVE22 name .p2.149
+prescribed_point -40 49.9639 79.1516 family FRACTURE_CURVE22 name .p1.150
+prescribed_point -40 48.5597 85.1703 family FRACTURE_CURVE22 name .p2.150
+prescribed_point -40 -12.5057 86.6209 family FRACTURE_CURVE23 name .p1.151
+prescribed_point -40 -17.8286 89.7614 family FRACTURE_CURVE23 name .p2.151
+prescribed_point -40 -17.8286 89.7614 family FRACTURE_CURVE23 name .p1.152
+prescribed_point -40 -23.9809 89.1734 family FRACTURE_CURVE23 name .p2.152
+prescribed_point -40 -23.9809 89.1734 family FRACTURE_CURVE23 name .p1.153
+prescribed_point -40 -28.6127 85.0815 family FRACTURE_CURVE23 name .p2.153
+prescribed_point -40 -28.6127 85.0815 family FRACTURE_CURVE23 name .p1.154
+prescribed_point -40 -29.9546 79.0486 family FRACTURE_CURVE23 name .p2.154
+prescribed_point -40 -29.9546 79.0486 family FRACTURE_CURVE23 name .p1.155
+prescribed_point -40 -27.4943 73.3791 family FRACTURE_CURVE23 name .p2.155
+prescribed_point -40 -27.4943 73.3791 family FRACTURE_CURVE23 name .p1.156
+prescribed_point -40 -22.1714 70.2386 family FRACTURE_CURVE23 name .p2.156
+prescribed_point -40 -22.1714 70.2386 family FRACTURE_CURVE23 name .p1.157
+prescribed_point -40 -16.0191 70.8266 family FRACTURE_CURVE23 name .p2.157
+prescribed_point -40 -16.0191 70.8266 family FRACTURE_CURVE23 name .p1.158
+prescribed_point -40 -11.3873 74.9185 family FRACTURE_CURVE23 name .p2.158
+prescribed_point -40 -11.3873 74.9185 family FRACTURE_CURVE23 name .p1.159
+prescribed_point -40 -10.0454 80.9514 family FRACTURE_CURVE23 name .p2.159
+prescribed_point -40 -10.0454 80.9514 family FRACTURE_CURVE23 name .p1.160
+prescribed_point -40 -12.5057 86.6209 family FRACTURE_CURVE23 name .p2.160
+prescribed_point -40 -32.3655 86.4587 family FRACTURE_CURVE24 name .p1.161
+prescribed_point -40 -37.6199 89.7126 family FRACTURE_CURVE24 name .p2.161
+prescribed_point -40 -37.6199 89.7126 family FRACTURE_CURVE24 name .p1.162
+prescribed_point -40 -43.7834 89.2567 family FRACTURE_CURVE24 name .p2.162
+prescribed_point -40 -43.7834 89.2567 family FRACTURE_CURVE24 name .p1.163
+prescribed_point -40 -48.5018 85.265 family FRACTURE_CURVE24 name .p2.163
+prescribed_point -40 -48.5018 85.265 family FRACTURE_CURVE24 name .p1.164
+prescribed_point -40 -49.9727 79.2622 family FRACTURE_CURVE24 name .p2.164
+prescribed_point -40 -49.9727 79.2622 family FRACTURE_CURVE24 name .p1.165
+prescribed_point -40 -47.6345 73.5413 family FRACTURE_CURVE24 name .p2.165
+prescribed_point -40 -47.6345 73.5413 family FRACTURE_CURVE24 name .p1.166
+prescribed_point -40 -42.3801 70.2874 family FRACTURE_CURVE24 name .p2.166
+prescribed_point -40 -42.3801 70.2874 family FRACTURE_CURVE24 name .p1.167
+prescribed_point -40 -36.2166 70.7433 family FRACTURE_CURVE24 name .p2.167
+prescribed_point -40 -36.2166 70.7433 family FRACTURE_CURVE24 name .p1.168
+prescribed_point -40 -31.4982 74.735 family FRACTURE_CURVE24 name .p2.168
+prescribed_point -40 -31.4982 74.735 family FRACTURE_CURVE24 name .p1.169
+prescribed_point -40 -30.0273 80.7378 family FRACTURE_CURVE24 name .p2.169
+prescribed_point -40 -30.0273 80.7378 family FRACTURE_CURVE24 name .p1.170
+prescribed_point -40 -32.3655 86.4587 family FRACTURE_CURVE24 name .p2.170
+prescribed_point 0 47.3351 86.7968 family FRACTURE_CURVE2 name .p1.171
+prescribed_point 0 41.9392 89.8102 family FRACTURE_CURVE2 name .p2.171
+prescribed_point 0 41.9392 89.8102 family FRACTURE_CURVE2 name .p1.172
+prescribed_point 0 35.8026 89.0764 family FRACTURE_CURVE2 name .p2.172
+prescribed_point 0 35.8026 89.0764 family FRACTURE_CURVE2 name .p1.173
+prescribed_point 0 31.2692 84.8758 family FRACTURE_CURVE2 name .p2.173
+prescribed_point 0 31.2692 84.8758 family FRACTURE_CURVE2 name .p1.174
+prescribed_point 0 30.0707 78.8128 family FRACTURE_CURVE2 name .p2.174
+prescribed_point 0 30.0707 78.8128 family FRACTURE_CURVE2 name .p1.175
+prescribed_point 0 32.6649 73.2032 family FRACTURE_CURVE2 name .p2.175
+prescribed_point 0 32.6649 73.2032 family FRACTURE_CURVE2 name .p1.176
+prescribed_point 0 38.0608 70.1898 family FRACTURE_CURVE2 name .p2.176
+prescribed_point 0 38.0608 70.1898 family FRACTURE_CURVE2 name .p1.177
+prescribed_point 0 44.1974 70.9236 family FRACTURE_CURVE2 name .p2.177
+prescribed_point 0 44.1974 70.9236 family FRACTURE_CURVE2 name .p1.178
+prescribed_point 0 48.7308 75.1242 family FRACTURE_CURVE2 name .p2.178
+prescribed_point 0 48.7308 75.1242 family FRACTURE_CURVE2 name .p1.179
+prescribed_point 0 49.9293 81.1872 family FRACTURE_CURVE2 name .p2.179
+prescribed_point 0 49.9293 81.1872 family FRACTURE_CURVE2 name .p1.180
+prescribed_point 0 47.3351 86.7968 family FRACTURE_CURVE2 name .p2.180
+prescribed_point 0 -12.1793 86.2319 family FRACTURE_CURVE3 name .p1.181
+prescribed_point 0 -17.3359 89.6386 family FRACTURE_CURVE3 name .p2.181
+prescribed_point 0 -17.3359 89.6386 family FRACTURE_CURVE3 name .p1.182
+prescribed_point 0 -23.5101 89.3637 family FRACTURE_CURVE3 name .p2.182
+prescribed_point 0 -23.5101 89.3637 family FRACTURE_CURVE3 name .p1.183
+prescribed_point 0 -28.3436 85.5122 family FRACTURE_CURVE3 name .p2.183
+prescribed_point 0 -28.3436 85.5122 family FRACTURE_CURVE3 name .p1.184
+prescribed_point 0 -29.9901 79.5552 family FRACTURE_CURVE3 name .p2.184
+prescribed_point 0 -29.9901 79.5552 family FRACTURE_CURVE3 name .p1.185
+prescribed_point 0 -27.8207 73.7681 family FRACTURE_CURVE3 name .p2.185
+prescribed_point 0 -27.8207 73.7681 family FRACTURE_CURVE3 name .p1.186
+prescribed_point 0 -22.6641 70.3614 family FRACTURE_CURVE3 name .p2.186
+prescribed_point 0 -22.6641 70.3614 family FRACTURE_CURVE3 name .p1.187
+prescribed_point 0 -16.4899 70.6363 family FRACTURE_CURVE3 name .p2.187
+prescribed_point 0 -16.4899 70.6363 family FRACTURE_CURVE3 name .p1.188
+prescribed_point 0 -11.6564 74.4878 family FRACTURE_CURVE3 name .p2.188
+prescribed_point 0 -11.6564 74.4878 family FRACTURE_CURVE3 name .p1.189
+prescribed_point 0 -10.0099 80.4448 family FRACTURE_CURVE3 name .p2.189
+prescribed_point 0 -10.0099 80.4448 family FRACTURE_CURVE3 name .p1.190
+prescribed_point 0 -12.1793 86.2319 family FRACTURE_CURVE3 name .p2.190
+prescribed_point 0 -30.8356 84.0017 family FRACTURE_CURVE4 name .p1.191
+prescribed_point 0 -34.9379 88.6241 family FRACTURE_CURVE4 name .p2.191
+prescribed_point 0 -34.9379 88.6241 family FRACTURE_CURVE4 name .p1.192
+prescribed_point 0 -40.9738 89.9525 family FRACTURE_CURVE4 name .p2.192
+prescribed_point 0 -40.9738 89.9525 family FRACTURE_CURVE4 name .p1.193
+prescribed_point 0 -46.6378 87.4793 family FRACTURE_CURVE4 name .p2.193
+prescribed_point 0 -46.6378 87.4793 family FRACTURE_CURVE4 name .p1.194
+prescribed_point 0 -49.7663 82.1493 family FRACTURE_CURVE4 name .p2.194
+prescribed_point 0 -49.7663 82.1493 family FRACTURE_CURVE4 name .p1.195
+prescribed_point 0 -49.1644 75.9983 family FRACTURE_CURVE4 name .p2.195
+prescribed_point 0 -49.1644 75.9983 family FRACTURE_CURVE4 name .p1.196
+prescribed_point 0 -45.0621 71.3759 family FRACTURE_CURVE4 name .p2.196
+prescribed_point 0 -45.0621 71.3759 family FRACTURE_CURVE4 name .p1.197
+prescribed_point 0 -39.0262 70.0475 family FRACTURE_CURVE4 name .p2.197
+prescribed_point 0 -39.0262 70.0475 family FRACTURE_CURVE4 name .p1.198
+prescribed_point 0 -33.3622 72.5207 family FRACTURE_CURVE4 name .p2.198
+prescribed_point 0 -33.3622 72.5207 family FRACTURE_CURVE4 name .p1.199
+prescribed_point 0 -30.2337 77.8507 family FRACTURE_CURVE4 name .p2.199
+prescribed_point 0 -30.2337 77.8507 family FRACTURE_CURVE4 name .p1.200
+prescribed_point 0 -30.8356 84.0017 family FRACTURE_CURVE4 name .p2.200
+prescribed_point 20 7.74536 86.3253 family FRACTURE_CURVE5 name .p1.201
+prescribed_point 20 2.54821 89.6699 family FRACTURE_CURVE5 name .p2.201
+prescribed_point 20 2.54821 89.6699 family FRACTURE_CURVE5 name .p1.202
+prescribed_point 20 -3.62227 89.3209 family FRACTURE_CURVE5 name .p2.202
+prescribed_point 20 -3.62227 89.3209 family FRACTURE_CURVE5 name .p1.203
+prescribed_point 20 -8.40916 85.4117 family FRACTURE_CURVE5 name .p2.203
+prescribed_point 20 -8.40916 85.4117 family FRACTURE_CURVE5 name .p1.204
+prescribed_point 20 -9.98404 79.4353 family FRACTURE_CURVE5 name .p2.204
+prescribed_point 20 -9.98404 79.4353 family FRACTURE_CURVE5 name .p1.205
+prescribed_point 20 -7.74536 73.6747 family FRACTURE_CURVE5 name .p2.205
+prescribed_point 20 -7.74536 73.6747 family FRACTURE_CURVE5 name .p1.206
+prescribed_point 20 -2.54821 70.3301 family FRACTURE_CURVE5 name .p2.206
+prescribed_point 20 -2.54821 70.3301 family FRACTURE_CURVE5 name .p1.207
+prescribed_point 20 3.62227 70.6791 family FRACTURE_CURVE5 name .p2.207
+prescribed_point 20 3.62227 70.6791 family FRACTURE_CURVE5 name .p1.208
+prescribed_point 20 8.40916 74.5883 family FRACTURE_CURVE5 name .p2.208
+prescribed_point 20 8.40916 74.5883 family FRACTURE_CURVE5 name .p1.209
+prescribed_point 20 9.98404 80.5647 family FRACTURE_CURVE5 name .p2.209
+prescribed_point 20 9.98404 80.5647 family FRACTURE_CURVE5 name .p1.210
+prescribed_point 20 7.74536 86.3253 family FRACTURE_CURVE5 name .p2.210
+prescribed_point 20 24.5908 88.884 family FRACTURE_CURVE6 name .p1.211
+prescribed_point 20 18.4921 89.8857 family FRACTURE_CURVE6 name .p2.211
+prescribed_point 20 18.4921 89.8857 family FRACTURE_CURVE6 name .p1.212
+prescribed_point 20 12.9695 87.1114 family FRACTURE_CURVE6 name .p2.212
+prescribed_point 20 12.9695 87.1114 family FRACTURE_CURVE6 name .p1.213
+prescribed_point 20 10.1322 81.6208 family FRACTURE_CURVE6 name .p2.213
+prescribed_point 20 10.1322 81.6208 family FRACTURE_CURVE6 name .p1.214
+prescribed_point 20 11.0641 75.5111 family FRACTURE_CURVE6 name .p2.214
+prescribed_point 20 11.0641 75.5111 family FRACTURE_CURVE6 name .p1.215
+prescribed_point 20 15.4092 71.116 family FRACTURE_CURVE6 name .p2.215
+prescribed_point 20 15.4092 71.116 family FRACTURE_CURVE6 name .p1.216
+prescribed_point 20 21.5079 70.1143 family FRACTURE_CURVE6 name .p2.216
+prescribed_point 20 21.5079 70.1143 family FRACTURE_CURVE6 name .p1.217
+prescribed_point 20 27.0305 72.8886 family FRACTURE_CURVE6 name .p2.217
+prescribed_point 20 27.0305 72.8886 family FRACTURE_CURVE6 name .p1.218
+prescribed_point 20 29.8678 78.3792 family FRACTURE_CURVE6 name .p2.218
+prescribed_point 20 29.8678 78.3792 family FRACTURE_CURVE6 name .p1.219
+prescribed_point 20 28.9359 84.4889 family FRACTURE_CURVE6 name .p2.219
+prescribed_point 20 28.9359 84.4889 family FRACTURE_CURVE6 name .p1.220
+prescribed_point 20 24.5908 88.884 family FRACTURE_CURVE6 name .p2.220
+prescribed_point 20 35.7276 70.9586 family FRACTURE_CURVE7 name .p1.221
+prescribed_point 20 41.858 70.1741 family FRACTURE_CURVE7 name .p2.221
+prescribed_point 20 41.858 70.1741 family FRACTURE_CURVE7 name .p1.222
+prescribed_point 20 47.2786 73.1428 family FRACTURE_CURVE7 name .p2.222
+prescribed_point 20 47.2786 73.1428 family FRACTURE_CURVE7 name .p1.223
+prescribed_point 20 49.9191 78.7307 family FRACTURE_CURVE7 name .p2.223
+prescribed_point 20 49.9191 78.7307 family FRACTURE_CURVE7 name .p1.224
+prescribed_point 20 48.7708 84.8034 family FRACTURE_CURVE7 name .p2.224
+prescribed_point 20 48.7708 84.8034 family FRACTURE_CURVE7 name .p1.225
+prescribed_point 20 44.2724 89.0414 family FRACTURE_CURVE7 name .p2.225
+prescribed_point 20 44.2724 89.0414 family FRACTURE_CURVE7 name .p1.226
+prescribed_point 20 38.142 89.8259 family FRACTURE_CURVE7 name .p2.226
+prescribed_point 20 38.142 89.8259 family FRACTURE_CURVE7 name .p1.227
+prescribed_point 20 32.7214 86.8572 family FRACTURE_CURVE7 name .p2.227
+prescribed_point 20 32.7214 86.8572 family FRACTURE_CURVE7 name .p1.228
+prescribed_point 20 30.0809 81.2693 family FRACTURE_CURVE7 name .p2.228
+prescribed_point 20 30.0809 81.2693 family FRACTURE_CURVE7 name .p1.229
+prescribed_point 20 31.2292 75.1966 family FRACTURE_CURVE7 name .p2.229
+prescribed_point 20 31.2292 75.1966 family FRACTURE_CURVE7 name .p1.230
+prescribed_point 20 35.7276 70.9586 family FRACTURE_CURVE7 name .p2.230
+prescribed_point 20 -10.8971 84.1397 family FRACTURE_CURVE8 name .p1.231
+prescribed_point 20 -15.0689 88.6997 family FRACTURE_CURVE8 name .p2.231
+prescribed_point 20 -15.0689 88.6997 family FRACTURE_CURVE8 name .p1.232
+prescribed_point 20 -21.1242 89.9366 family FRACTURE_CURVE8 name .p2.232
+prescribed_point 20 -21.1242 89.9366 family FRACTURE_CURVE8 name .p1.233
+prescribed_point 20 -26.7501 87.3781 family FRACTURE_CURVE8 name .p2.233
+prescribed_point 20 -26.7501 87.3781 family FRACTURE_CURVE8 name .p1.234
+prescribed_point 20 -29.7977 82.0014 family FRACTURE_CURVE8 name .p2.234
+prescribed_point 20 -29.7977 82.0014 family FRACTURE_CURVE8 name .p1.235
+prescribed_point 20 -29.1029 75.8603 family FRACTURE_CURVE8 name .p2.235
+prescribed_point 20 -29.1029 75.8603 family FRACTURE_CURVE8 name .p1.236
+prescribed_point 20 -24.9311 71.3003 family FRACTURE_CURVE8 name .p2.236
+prescribed_point 20 -24.9311 71.3003 family FRACTURE_CURVE8 name .p1.237
+prescribed_point 20 -18.8758 70.0634 family FRACTURE_CURVE8 name .p2.237
+prescribed_point 20 -18.8758 70.0634 family FRACTURE_CURVE8 name .p1.238
+prescribed_point 20 -13.2499 72.6219 family FRACTURE_CURVE8 name .p2.238
+prescribed_point 20 -13.2499 72.6219 family FRACTURE_CURVE8 name .p1.239
+prescribed_point 20 -10.2023 77.9986 family FRACTURE_CURVE8 name .p2.239
+prescribed_point 20 -10.2023 77.9986 family FRACTURE_CURVE8 name .p1.240
+prescribed_point 20 -10.8971 84.1397 family FRACTURE_CURVE8 name .p2.240
+prescribed_point 20 -33.7808 87.8308 family FRACTURE_CURVE9 name .p1.241
+prescribed_point 20 -39.5714 89.9908 family FRACTURE_CURVE9 name .p2.241
+prescribed_point 20 -39.5714 89.9908 family FRACTURE_CURVE9 name .p1.242
+prescribed_point 20 -45.5257 88.3347 family FRACTURE_CURVE9 name .p2.242
+prescribed_point 20 -45.5257 88.3347 family FRACTURE_CURVE9 name .p1.243
+prescribed_point 20 -49.3694 83.495 family FRACTURE_CURVE9 name .p2.243
+prescribed_point 20 -49.3694 83.495 family FRACTURE_CURVE9 name .p1.244
+prescribed_point 20 -49.6343 77.3203 family FRACTURE_CURVE9 name .p2.244
+prescribed_point 20 -49.6343 77.3203 family FRACTURE_CURVE9 name .p1.245
+prescribed_point 20 -46.2192 72.1692 family FRACTURE_CURVE9 name .p2.245
+prescribed_point 20 -46.2192 72.1692 family FRACTURE_CURVE9 name .p1.246
+prescribed_point 20 -40.4286 70.0092 family FRACTURE_CURVE9 name .p2.246
+prescribed_point 20 -40.4286 70.0092 family FRACTURE_CURVE9 name .p1.247
+prescribed_point 20 -34.4743 71.6653 family FRACTURE_CURVE9 name .p2.247
+prescribed_point 20 -34.4743 71.6653 family FRACTURE_CURVE9 name .p1.248
+prescribed_point 20 -30.6306 76.505 family FRACTURE_CURVE9 name .p2.248
+prescribed_point 20 -30.6306 76.505 family FRACTURE_CURVE9 name .p1.249
+prescribed_point 20 -30.3657 82.6797 family FRACTURE_CURVE9 name .p2.249
+prescribed_point 20 -30.3657 82.6797 family FRACTURE_CURVE9 name .p1.250
+prescribed_point 20 -33.7808 87.8308 family FRACTURE_CURVE9 name .p2.250
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.520
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.521
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.521.1
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.52100
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.522
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.523
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.523.1
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.52300
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.524
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.525
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.525.1
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.52500
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.526
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.527
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.527.1
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.52700
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.528
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.529
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.529.1
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.52900
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.530
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.531
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.531.1
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.53100
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.532
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.533
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.533.1
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.53300
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.534
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.535
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.535.1
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.53500
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.536
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.537
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.537.1
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.53700
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.538
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.539
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.539.1
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.53900
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.540
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.541
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.541.1
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.54100
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.542
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.543
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.543.1
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.54300
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.544
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.545
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.545.1
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.54500
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.546
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.547
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.547.1
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.54700
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.548
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.549
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.549.1
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.54900
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.550
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.551
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.551.1
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.55100
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.552
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.553
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.553.1
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.55300
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.554
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.555
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.555.1
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.55500
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.556
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.557
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.557.1
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.55700
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.558
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.559
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.559.1
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.55900
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.560
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.561
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.561.1
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.56100
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.562
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.563
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.563.1
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.56300
+prescribed_point 999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.564
+prescribed_point -999.99997764826 -999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.565
+prescribed_point -999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.565.1
+prescribed_point 999.99997764826 -999.99997764826 99.999997764826 family EDGE_CURVES name pnt.56500
+prescribed_point 999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.566
+prescribed_point -999.99997764826 999.99997764826 -99.999997764826 family EDGE_CURVES name pnt.567
+prescribed_point -999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.567.1
+prescribed_point 999.99997764826 999.99997764826 99.999997764826 family EDGE_CURVES name pnt.56700
+define_curve family EDGE_CURVES tetra_size 500 name CURVE1
+bspline
+2,2,0
+0,0,200000,200000
+-999.99997764826,-999.99997764826,-99.999997764826
+999.99997764826,-999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE2
+bspline
+2,2,0
+0,0,20000,20000
+999.99997764826,-999.99997764826,-99.999997764826
+999.99997764826,-999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE3
+bspline
+2,2,0
+0,0,200000,200000
+999.99997764826,-999.99997764826,99.999997764826
+-999.99997764826,-999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE4
+bspline
+2,2,0
+0,0,20000,20000
+-999.99997764826,-999.99997764826,99.999997764826
+-999.99997764826,-999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE5
+bspline
+2,2,0
+0,0,200000,200000
+-999.99997764826,-999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE6
+bspline
+2,2,0
+0,0,20000,20000
+-999.99997764826,999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE7
+bspline
+2,2,0
+0,0,200000,200000
+-999.99997764826,999.99997764826,99.999997764826
+-999.99997764826,-999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE8
+bspline
+2,2,0
+0,0,200000,200000
+-999.99997764826,999.99997764826,-99.999997764826
+999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE9
+bspline
+2,2,0
+0,0,20000,20000
+999.99997764826,999.99997764826,-99.999997764826
+999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE10
+bspline
+2,2,0
+0,0,200000,200000
+999.99997764826,999.99997764826,99.999997764826
+-999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE11
+bspline
+2,2,0
+0,0,200000,200000
+999.99997764826,999.99997764826,-99.999997764826
+999.99997764826,-999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE12
+bspline
+2,2,0
+0,0,200000,200000
+999.99997764826,-999.99997764826,99.999997764826
+999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE1.12
+bspline
+2,2,0
+0,0,40000,40000
+-999.99997764826,-999.99997764826,-99.999997764826
+-999.99997764826,-999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE2.13
+bspline
+2,2,0
+0,0,400000,400000
+-999.99997764826,-999.99997764826,99.999997764826
+-999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE3.14
+bspline
+2,2,0
+0,0,40000,40000
+-999.99997764826,999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE4.15
+bspline
+2,2,0
+0,0,400000,400000
+-999.99997764826,-999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE5.16
+bspline
+2,2,0
+0,0,40000,40000
+999.99997764826,-999.99997764826,99.999997764826
+999.99997764826,-999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE6.17
+bspline
+2,2,0
+0,0,400000,400000
+999.99997764826,-999.99997764826,99.999997764826
+999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE7.18
+bspline
+2,2,0
+0,0,40000,40000
+999.99997764826,999.99997764826,99.999997764826
+999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE8.19
+bspline
+2,2,0
+0,0,400000,400000
+999.99997764826,-999.99997764826,-99.999997764826
+999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE9.20
+bspline
+2,2,0
+0,0,400000,400000
+999.99997764826,-999.99997764826,-99.999997764826
+-999.99997764826,-999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE10.21
+bspline
+2,2,0
+0,0,400000,400000
+-999.99997764826,-999.99997764826,99.999997764826
+999.99997764826,-999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE11.22
+bspline
+2,2,0
+0,0,400000,400000
+999.99997764826,999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE12.23
+bspline
+2,2,0
+0,0,400000,400000
+-999.99997764826,999.99997764826,99.999997764826
+999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE1.24
+bspline
+2,2,0
+0,0,200000,200000
+-999.99997764826,-999.99997764826,-99.999997764826
+999.99997764826,-999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE2.25
+bspline
+2,2,0
+0,0,20000,20000
+999.99997764826,-999.99997764826,-99.999997764826
+999.99997764826,-999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE3.26
+bspline
+2,2,0
+0,0,200000,200000
+999.99997764826,-999.99997764826,99.999997764826
+-999.99997764826,-999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE4.27
+bspline
+2,2,0
+0,0,20000,20000
+-999.99997764826,-999.99997764826,99.999997764826
+-999.99997764826,-999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE5.28
+bspline
+2,2,0
+0,0,200000,200000
+-999.99997764826,-999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE6.29
+bspline
+2,2,0
+0,0,20000,20000
+-999.99997764826,999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE7.30
+bspline
+2,2,0
+0,0,200000,200000
+-999.99997764826,999.99997764826,99.999997764826
+-999.99997764826,-999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE8.31
+bspline
+2,2,0
+0,0,200000,200000
+-999.99997764826,999.99997764826,-99.999997764826
+999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE9.32
+bspline
+2,2,0
+0,0,20000,20000
+999.99997764826,999.99997764826,-99.999997764826
+999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE10.33
+bspline
+2,2,0
+0,0,200000,200000
+999.99997764826,999.99997764826,99.999997764826
+-999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE11.34
+bspline
+2,2,0
+0,0,200000,200000
+999.99997764826,999.99997764826,-99.999997764826
+999.99997764826,-999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE12.35
+bspline
+2,2,0
+0,0,200000,200000
+999.99997764826,-999.99997764826,99.999997764826
+999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE1.36
+bspline
+2,2,0
+0,0,40000,40000
+-999.99997764826,-999.99997764826,-99.999997764826
+-999.99997764826,-999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE2.37
+bspline
+2,2,0
+0,0,400000,400000
+-999.99997764826,-999.99997764826,99.999997764826
+-999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE3.38
+bspline
+2,2,0
+0,0,40000,40000
+-999.99997764826,999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE4.39
+bspline
+2,2,0
+0,0,400000,400000
+-999.99997764826,-999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE5.40
+bspline
+2,2,0
+0,0,40000,40000
+999.99997764826,-999.99997764826,99.999997764826
+999.99997764826,-999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE6.41
+bspline
+2,2,0
+0,0,400000,400000
+999.99997764826,-999.99997764826,99.999997764826
+999.99997764826,999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE7.42
+bspline
+2,2,0
+0,0,40000,40000
+999.99997764826,999.99997764826,99.999997764826
+999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE8.43
+bspline
+2,2,0
+0,0,400000,400000
+999.99997764826,-999.99997764826,-99.999997764826
+999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE9.44
+bspline
+2,2,0
+0,0,400000,400000
+999.99997764826,-999.99997764826,-99.999997764826
+-999.99997764826,-999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE10.45
+bspline
+2,2,0
+0,0,400000,400000
+-999.99997764826,-999.99997764826,99.999997764826
+999.99997764826,-999.99997764826,99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE11.46
+bspline
+2,2,0
+0,0,400000,400000
+999.99997764826,999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,-99.999997764826
+define_curve family EDGE_CURVES tetra_size 500 name CURVE12.47
+bspline
+2,2,0
+0,0,400000,400000
+-999.99997764826,999.99997764826,99.999997764826
+999.99997764826,999.99997764826,99.999997764826
+define_curve family INTLENS_G_S tetra_size 50 name SOLID1/e1
+bspline
+9,3,1
+659734.45725386,659734.45725386,659734.45725386,698459.99295081,698459.99295081
+699685.21973788,699685.21973788,700910.44652494,700910.44652494,738910.4354572
+738910.4354572,738910.4354572
+0,0,0,1
+0,193.01097863748,-1.5916157957298e-13,0.99045103240772
+0,382.33582132385,53.218905537385,1
+0,293.7889343498,41.675394790674,0.75427613592277
+0,388.4713761438,62.626108056647,1
+0,292.24046921256,52.799367072563,0.75427613592277
+0,379.99988082895,69.999998435378,1
+0,189.99994041447,69.999998435378,1
+0,0,69.999998435378,1
+define_curve family INTLENS_G_S tetra_size 50 name SOLID1/e1.49
+bspline
+9,3,1
+659734.45725386,659734.45725386,659734.45725386,698459.99295081,698459.99295081
+699685.21973788,699685.21973788,700910.44652494,700910.44652494,738910.4354572
+738910.4354572,738910.4354572
+0,0,0,1
+0,193.01097863748,-1.5916157957298e-13,0.99045103240772
+0,382.33582132385,53.218905537385,1
+0,293.7889343498,41.675394790674,0.75427613592277
+0,388.4713761438,62.626108056647,1
+0,292.24046921256,52.799367072563,0.75427613592277
+0,379.99988082895,69.999998435378,1
+0,189.99994041447,69.999998435378,1
+0,0,69.999998435378,1
+define_curve family FRACTURE_CURVE0 tetra_size 7.41641 name c1
+unstruct_curve n_points 2 n_edges 1
+0 9.9802999 79.372597
+0 8.4430294 85.358696
+0 1
+define_curve family FRACTURE_CURVE0 tetra_size 7.41641 name c1.51
+unstruct_curve n_points 2 n_edges 1
+0 8.4430294 85.358696
+0 3.6808097 89.297897
+0 1
+define_curve family FRACTURE_CURVE0 tetra_size 7.41641 name c1.52
+unstruct_curve n_points 2 n_edges 1
+0 3.6808097 89.297897
+0 -2.48735 89.685699
+0 1
+define_curve family FRACTURE_CURVE0 tetra_size 7.41641 name c1.53
+unstruct_curve n_points 2 n_edges 1
+0 -2.48735 89.685699
+0 -7.70543 86.373894
+0 1
+define_curve family FRACTURE_CURVE0 tetra_size 7.41641 name c1.54
+unstruct_curve n_points 2 n_edges 1
+0 -7.70543 86.373894
+0 -9.9802999 80.627403
+0 1
+define_curve family FRACTURE_CURVE0 tetra_size 7.41641 name c1.55
+unstruct_curve n_points 2 n_edges 1
+0 -9.9802999 80.627403
+0 -8.4430294 74.641296
+0 1
+define_curve family FRACTURE_CURVE0 tetra_size 7.41641 name c1.56
+unstruct_curve n_points 2 n_edges 1
+0 -8.4430294 74.641296
+0 -3.6808097 70.702095
+0 1
+define_curve family FRACTURE_CURVE0 tetra_size 7.41641 name c1.57
+unstruct_curve n_points 2 n_edges 1
+0 -3.6808097 70.702095
+0 2.48735 70.314301
+0 1
+define_curve family FRACTURE_CURVE0 tetra_size 7.41641 name c1.58
+unstruct_curve n_points 2 n_edges 1
+0 2.48735 70.314301
+0 7.70543 73.626099
+0 1
+define_curve family FRACTURE_CURVE0 tetra_size 7.41641 name c1.59
+unstruct_curve n_points 2 n_edges 1
+0 7.70543 73.626099
+0 9.9802999 79.372597
+0 1
+define_curve family FRACTURE_CURVE10 tetra_size 7.41641 name c1.60
+unstruct_curve n_points 2 n_edges 1
+-20 8.6245794 85.061295
+-20 4.00249 89.164101
+0 1
+define_curve family FRACTURE_CURVE10 tetra_size 7.41641 name c1.61
+unstruct_curve n_points 2 n_edges 1
+-20 4.00249 89.164101
+-20 -2.1484199 89.766502
+0 1
+define_curve family FRACTURE_CURVE10 tetra_size 7.41641 name c1.62
+unstruct_curve n_points 2 n_edges 1
+-20 -2.1484199 89.766502
+-20 -7.4787097 86.638397
+0 1
+define_curve family FRACTURE_CURVE10 tetra_size 7.41641 name c1.63
+unstruct_curve n_points 2 n_edges 1
+-20 -7.4787097 86.638397
+-20 -9.9523792 80.974701
+0 1
+define_curve family FRACTURE_CURVE10 tetra_size 7.41641 name c1.64
+unstruct_curve n_points 2 n_edges 1
+-20 -9.9523792 80.974701
+-20 -8.6245794 74.938698
+0 1
+define_curve family FRACTURE_CURVE10 tetra_size 7.41641 name c1.65
+unstruct_curve n_points 2 n_edges 1
+-20 -8.6245794 74.938698
+-20 -4.00249 70.835899
+0 1
+define_curve family FRACTURE_CURVE10 tetra_size 7.41641 name c1.66
+unstruct_curve n_points 2 n_edges 1
+-20 -4.00249 70.835899
+-20 2.1484199 70.233498
+0 1
+define_curve family FRACTURE_CURVE10 tetra_size 7.41641 name c1.67
+unstruct_curve n_points 2 n_edges 1
+-20 2.1484199 70.233498
+-20 7.4787097 73.361603
+0 1
+define_curve family FRACTURE_CURVE10 tetra_size 7.41641 name c1.68
+unstruct_curve n_points 2 n_edges 1
+-20 7.4787097 73.361603
+-20 9.9523792 79.025299
+0 1
+define_curve family FRACTURE_CURVE10 tetra_size 7.41641 name c1.69
+unstruct_curve n_points 2 n_edges 1
+-20 9.9523792 79.025299
+-20 8.6245794 85.061295
+0 1
+define_curve family FRACTURE_CURVE11 tetra_size 7.41641 name c1.70
+unstruct_curve n_points 2 n_edges 1
+-20 28.9324 84.495796
+-20 24.583899 88.887497
+0 1
+define_curve family FRACTURE_CURVE11 tetra_size 7.41641 name c1.71
+unstruct_curve n_points 2 n_edges 1
+-20 24.583899 88.887497
+-20 18.484499 89.884499
+0 1
+define_curve family FRACTURE_CURVE11 tetra_size 7.41641 name c1.72
+unstruct_curve n_points 2 n_edges 1
+-20 18.484499 89.884499
+-20 12.964 87.105896
+0 1
+define_curve family FRACTURE_CURVE11 tetra_size 7.41641 name c1.73
+unstruct_curve n_points 2 n_edges 1
+-20 12.964 87.105896
+-20 10.131 81.613098
+0 1
+define_curve family FRACTURE_CURVE11 tetra_size 7.41641 name c1.74
+unstruct_curve n_points 2 n_edges 1
+-20 10.131 81.613098
+-20 11.0676 75.504196
+0 1
+define_curve family FRACTURE_CURVE11 tetra_size 7.41641 name c1.75
+unstruct_curve n_points 2 n_edges 1
+-20 11.0676 75.504196
+-20 15.4161 71.112495
+0 1
+define_curve family FRACTURE_CURVE11 tetra_size 7.41641 name c1.76
+unstruct_curve n_points 2 n_edges 1
+-20 15.4161 71.112495
+-20 21.515499 70.115494
+0 1
+define_curve family FRACTURE_CURVE11 tetra_size 7.41641 name c1.77
+unstruct_curve n_points 2 n_edges 1
+-20 21.515499 70.115494
+-20 27.036001 72.894096
+0 1
+define_curve family FRACTURE_CURVE11 tetra_size 7.41641 name c1.78
+unstruct_curve n_points 2 n_edges 1
+-20 27.036001 72.894096
+-20 29.868998 78.386894
+0 1
+define_curve family FRACTURE_CURVE11 tetra_size 7.41641 name c1.79
+unstruct_curve n_points 2 n_edges 1
+-20 29.868998 78.386894
+-20 28.9324 84.495796
+0 1
+define_curve family FRACTURE_CURVE12 tetra_size 7.41641 name c1.80
+unstruct_curve n_points 2 n_edges 1
+-20 45.463699 88.375397
+-20 39.497299 89.987404
+0 1
+define_curve family FRACTURE_CURVE12 tetra_size 7.41641 name c1.81
+unstruct_curve n_points 2 n_edges 1
+-20 39.497299 89.987404
+-20 33.7229 87.7845
+0 1
+define_curve family FRACTURE_CURVE12 tetra_size 7.41641 name c1.82
+unstruct_curve n_points 2 n_edges 1
+-20 33.7229 87.7845
+-20 30.3461 82.6082
+0 1
+define_curve family FRACTURE_CURVE12 tetra_size 7.41641 name c1.83
+unstruct_curve n_points 2 n_edges 1
+-20 30.3461 82.6082
+-20 30.656799 76.4356
+0 1
+define_curve family FRACTURE_CURVE12 tetra_size 7.41641 name c1.84
+unstruct_curve n_points 2 n_edges 1
+-20 30.656799 76.4356
+-20 34.536297 71.624596
+0 1
+define_curve family FRACTURE_CURVE12 tetra_size 7.41641 name c1.85
+unstruct_curve n_points 2 n_edges 1
+-20 34.536297 71.624596
+-20 40.502701 70.012596
+0 1
+define_curve family FRACTURE_CURVE12 tetra_size 7.41641 name c1.86
+unstruct_curve n_points 2 n_edges 1
+-20 40.502701 70.012596
+-20 46.2771 72.2155
+0 1
+define_curve family FRACTURE_CURVE12 tetra_size 7.41641 name c1.87
+unstruct_curve n_points 2 n_edges 1
+-20 46.2771 72.2155
+-20 49.6539 77.3918
+0 1
+define_curve family FRACTURE_CURVE12 tetra_size 7.41641 name c1.88
+unstruct_curve n_points 2 n_edges 1
+-20 49.6539 77.3918
+-20 49.343197 83.5644
+0 1
+define_curve family FRACTURE_CURVE12 tetra_size 7.41641 name c1.89
+unstruct_curve n_points 2 n_edges 1
+-20 49.343197 83.5644
+-20 45.463699 88.375397
+0 1
+define_curve family FRACTURE_CURVE13 tetra_size 7.41641 name c1.90
+unstruct_curve n_points 2 n_edges 1
+-20 -10.9654 84.286797
+-20 -15.2106 88.778496
+0 1
+define_curve family FRACTURE_CURVE13 tetra_size 7.41641 name c1.91
+unstruct_curve n_points 2 n_edges 1
+-20 -15.2106 88.778496
+-20 -21.2852 89.917099
+0 1
+define_curve family FRACTURE_CURVE13 tetra_size 7.41641 name c1.92
+unstruct_curve n_points 2 n_edges 1
+-20 -21.2852 89.917099
+-20 -26.868797 87.267693
+0 1
+define_curve family FRACTURE_CURVE13 tetra_size 7.41641 name c1.93
+unstruct_curve n_points 2 n_edges 1
+-20 -26.868797 87.267693
+-20 -29.828798 81.8423
+0 1
+define_curve family FRACTURE_CURVE13 tetra_size 7.41641 name c1.94
+unstruct_curve n_points 2 n_edges 1
+-20 -29.828798 81.8423
+-20 -29.034599 75.713196
+0 1
+define_curve family FRACTURE_CURVE13 tetra_size 7.41641 name c1.95
+unstruct_curve n_points 2 n_edges 1
+-20 -29.034599 75.713196
+-20 -24.789398 71.221497
+0 1
+define_curve family FRACTURE_CURVE13 tetra_size 7.41641 name c1.96
+unstruct_curve n_points 2 n_edges 1
+-20 -24.789398 71.221497
+-20 -18.7148 70.082901
+0 1
+define_curve family FRACTURE_CURVE13 tetra_size 7.41641 name c1.97
+unstruct_curve n_points 2 n_edges 1
+-20 -18.7148 70.082901
+-20 -13.1312 72.7323
+0 1
+define_curve family FRACTURE_CURVE13 tetra_size 7.41641 name c1.98
+unstruct_curve n_points 2 n_edges 1
+-20 -13.1312 72.7323
+-20 -10.1712 78.1577
+0 1
+define_curve family FRACTURE_CURVE13 tetra_size 7.41641 name c1.99
+unstruct_curve n_points 2 n_edges 1
+-20 -10.1712 78.1577
+-20 -10.9654 84.286797
+0 1
+define_curve family FRACTURE_CURVE14 tetra_size 7.41641 name c1.100
+unstruct_curve n_points 2 n_edges 1
+-20 -33.328098 87.448898
+-20 -38.980701 89.947899
+0 1
+define_curve family FRACTURE_CURVE14 tetra_size 7.41641 name c1.101
+unstruct_curve n_points 2 n_edges 1
+-20 -38.980701 89.947899
+-20 -45.022598 88.647194
+0 1
+define_curve family FRACTURE_CURVE14 tetra_size 7.41641 name c1.102
+unstruct_curve n_points 2 n_edges 1
+-20 -45.022598 88.647194
+-20 -49.146 84.043495
+0 1
+define_curve family FRACTURE_CURVE14 tetra_size 7.41641 name c1.103
+unstruct_curve n_points 2 n_edges 1
+-20 -49.146 84.043495
+-20 -49.776001 77.895401
+0 1
+define_curve family FRACTURE_CURVE14 tetra_size 7.41641 name c1.104
+unstruct_curve n_points 2 n_edges 1
+-20 -49.776001 77.895401
+-20 -46.671898 72.551094
+0 1
+define_curve family FRACTURE_CURVE14 tetra_size 7.41641 name c1.105
+unstruct_curve n_points 2 n_edges 1
+-20 -46.671898 72.551094
+-20 -41.019302 70.052101
+0 1
+define_curve family FRACTURE_CURVE14 tetra_size 7.41641 name c1.106
+unstruct_curve n_points 2 n_edges 1
+-20 -41.019302 70.052101
+-20 -34.977398 71.352798
+0 1
+define_curve family FRACTURE_CURVE14 tetra_size 7.41641 name c1.107
+unstruct_curve n_points 2 n_edges 1
+-20 -34.977398 71.352798
+-20 -30.853998 75.956497
+0 1
+define_curve family FRACTURE_CURVE14 tetra_size 7.41641 name c1.108
+unstruct_curve n_points 2 n_edges 1
+-20 -30.853998 75.956497
+-20 -30.223999 82.104599
+0 1
+define_curve family FRACTURE_CURVE14 tetra_size 7.41641 name c1.109
+unstruct_curve n_points 2 n_edges 1
+-20 -30.223999 82.104599
+-20 -33.328098 87.448898
+0 1
+define_curve family FRACTURE_CURVE15 tetra_size 7.41641 name c1.110
+unstruct_curve n_points 2 n_edges 1
+40 9.9994793 79.897697
+40 8.1498699 85.7948
+0 1
+define_curve family FRACTURE_CURVE15 tetra_size 7.41641 name c1.111
+unstruct_curve n_points 2 n_edges 1
+40 8.1498699 85.7948
+40 3.18729 89.478493
+0 1
+define_curve family FRACTURE_CURVE15 tetra_size 7.41641 name c1.112
+unstruct_curve n_points 2 n_edges 1
+40 3.18729 89.478493
+40 -2.9927301 89.541695
+0 1
+define_curve family FRACTURE_CURVE15 tetra_size 7.41641 name c1.113
+unstruct_curve n_points 2 n_edges 1
+40 -2.9927301 89.541695
+40 -8.0296297 85.960304
+0 1
+define_curve family FRACTURE_CURVE15 tetra_size 7.41641 name c1.114
+unstruct_curve n_points 2 n_edges 1
+40 -8.0296297 85.960304
+40 -9.9994793 80.102295
+0 1
+define_curve family FRACTURE_CURVE15 tetra_size 7.41641 name c1.115
+unstruct_curve n_points 2 n_edges 1
+40 -9.9994793 80.102295
+40 -8.1498699 74.2052
+0 1
+define_curve family FRACTURE_CURVE15 tetra_size 7.41641 name c1.116
+unstruct_curve n_points 2 n_edges 1
+40 -8.1498699 74.2052
+40 -3.18729 70.5215
+0 1
+define_curve family FRACTURE_CURVE15 tetra_size 7.41641 name c1.117
+unstruct_curve n_points 2 n_edges 1
+40 -3.18729 70.5215
+40 2.9927301 70.458298
+0 1
+define_curve family FRACTURE_CURVE15 tetra_size 7.41641 name c1.118
+unstruct_curve n_points 2 n_edges 1
+40 2.9927301 70.458298
+40 8.0296297 74.039703
+0 1
+define_curve family FRACTURE_CURVE15 tetra_size 7.41641 name c1.119
+unstruct_curve n_points 2 n_edges 1
+40 8.0296297 74.039703
+40 9.9994793 79.897697
+0 1
+define_curve family FRACTURE_CURVE16 tetra_size 7.41641 name c1.120
+unstruct_curve n_points 2 n_edges 1
+40 28.252899 85.647095
+40 23.3575 89.419502
+0 1
+define_curve family FRACTURE_CURVE16 tetra_size 7.41641 name c1.121
+unstruct_curve n_points 2 n_edges 1
+40 23.3575 89.419502
+40 17.1796 89.594002
+0 1
+define_curve family FRACTURE_CURVE16 tetra_size 7.41641 name c1.122
+unstruct_curve n_points 2 n_edges 1
+40 17.1796 89.594002
+40 12.079 86.103897
+0 1
+define_curve family FRACTURE_CURVE16 tetra_size 7.41641 name c1.123
+unstruct_curve n_points 2 n_edges 1
+40 12.079 86.103897
+40 10.004 80.282402
+0 1
+define_curve family FRACTURE_CURVE16 tetra_size 7.41641 name c1.124
+unstruct_curve n_points 2 n_edges 1
+40 10.004 80.282402
+40 11.747099 74.352898
+0 1
+define_curve family FRACTURE_CURVE16 tetra_size 7.41641 name c1.125
+unstruct_curve n_points 2 n_edges 1
+40 11.747099 74.352898
+40 16.6425 70.580498
+0 1
+define_curve family FRACTURE_CURVE16 tetra_size 7.41641 name c1.126
+unstruct_curve n_points 2 n_edges 1
+40 16.6425 70.580498
+40 22.8204 70.405998
+0 1
+define_curve family FRACTURE_CURVE16 tetra_size 7.41641 name c1.127
+unstruct_curve n_points 2 n_edges 1
+40 22.8204 70.405998
+40 27.921 73.896095
+0 1
+define_curve family FRACTURE_CURVE16 tetra_size 7.41641 name c1.128
+unstruct_curve n_points 2 n_edges 1
+40 27.921 73.896095
+40 29.996 79.717598
+0 1
+define_curve family FRACTURE_CURVE16 tetra_size 7.41641 name c1.129
+unstruct_curve n_points 2 n_edges 1
+40 29.996 79.717598
+40 28.252899 85.647095
+0 1
+define_curve family FRACTURE_CURVE17 tetra_size 7.41641 name c1.130
+unstruct_curve n_points 2 n_edges 1
+40 45.436802 88.392998
+40 39.465199 89.985703
+0 1
+define_curve family FRACTURE_CURVE17 tetra_size 7.41641 name c1.131
+unstruct_curve n_points 2 n_edges 1
+40 39.465199 89.985703
+40 33.697899 87.764198
+0 1
+define_curve family FRACTURE_CURVE17 tetra_size 7.41641 name c1.132
+unstruct_curve n_points 2 n_edges 1
+40 33.697899 87.764198
+40 30.337799 82.577095
+0 1
+define_curve family FRACTURE_CURVE17 tetra_size 7.41641 name c1.133
+unstruct_curve n_points 2 n_edges 1
+40 30.337799 82.577095
+40 30.668301 76.405602
+0 1
+define_curve family FRACTURE_CURVE17 tetra_size 7.41641 name c1.134
+unstruct_curve n_points 2 n_edges 1
+40 30.668301 76.405602
+40 34.563198 71.607002
+0 1
+define_curve family FRACTURE_CURVE17 tetra_size 7.41641 name c1.135
+unstruct_curve n_points 2 n_edges 1
+40 34.563198 71.607002
+40 40.534798 70.014297
+0 1
+define_curve family FRACTURE_CURVE17 tetra_size 7.41641 name c1.136
+unstruct_curve n_points 2 n_edges 1
+40 40.534798 70.014297
+40 46.302097 72.235802
+0 1
+define_curve family FRACTURE_CURVE17 tetra_size 7.41641 name c1.137
+unstruct_curve n_points 2 n_edges 1
+40 46.302097 72.235802
+40 49.662201 77.422897
+0 1
+define_curve family FRACTURE_CURVE17 tetra_size 7.41641 name c1.138
+unstruct_curve n_points 2 n_edges 1
+40 49.662201 77.422897
+40 49.331699 83.594406
+0 1
+define_curve family FRACTURE_CURVE17 tetra_size 7.41641 name c1.139
+unstruct_curve n_points 2 n_edges 1
+40 49.331699 83.594406
+40 45.436802 88.392998
+0 1
+define_curve family FRACTURE_CURVE18 tetra_size 7.41641 name c1.140
+unstruct_curve n_points 2 n_edges 1
+40 -10.0189 80.614601
+40 -12.2864 86.363998
+0 1
+define_curve family FRACTURE_CURVE18 tetra_size 7.41641 name c1.141
+unstruct_curve n_points 2 n_edges 1
+40 -12.2864 86.363998
+40 -17.5002 89.682495
+0 1
+define_curve family FRACTURE_CURVE18 tetra_size 7.41641 name c1.142
+unstruct_curve n_points 2 n_edges 1
+40 -17.5002 89.682495
+40 -23.668898 89.302696
+0 1
+define_curve family FRACTURE_CURVE18 tetra_size 7.41641 name c1.143
+unstruct_curve n_points 2 n_edges 1
+40 -23.668898 89.302696
+40 -28.4361 85.369499
+0 1
+define_curve family FRACTURE_CURVE18 tetra_size 7.41641 name c1.144
+unstruct_curve n_points 2 n_edges 1
+40 -28.4361 85.369499
+40 -29.9811 79.385399
+0 1
+define_curve family FRACTURE_CURVE18 tetra_size 7.41641 name c1.145
+unstruct_curve n_points 2 n_edges 1
+40 -29.9811 79.385399
+40 -27.7136 73.636002
+0 1
+define_curve family FRACTURE_CURVE18 tetra_size 7.41641 name c1.146
+unstruct_curve n_points 2 n_edges 1
+40 -27.7136 73.636002
+40 -22.4998 70.317497
+0 1
+define_curve family FRACTURE_CURVE18 tetra_size 7.41641 name c1.147
+unstruct_curve n_points 2 n_edges 1
+40 -22.4998 70.317497
+40 -16.331099 70.697296
+0 1
+define_curve family FRACTURE_CURVE18 tetra_size 7.41641 name c1.148
+unstruct_curve n_points 2 n_edges 1
+40 -16.331099 70.697296
+40 -11.5639 74.630493
+0 1
+define_curve family FRACTURE_CURVE18 tetra_size 7.41641 name c1.149
+unstruct_curve n_points 2 n_edges 1
+40 -11.5639 74.630493
+40 -10.0189 80.614601
+0 1
+define_curve family FRACTURE_CURVE19 tetra_size 7.41641 name c1.150
+unstruct_curve n_points 2 n_edges 1
+40 -30.8557 75.952499
+40 -30.223101 82.100304
+0 1
+define_curve family FRACTURE_CURVE19 tetra_size 7.41641 name c1.151
+unstruct_curve n_points 2 n_edges 1
+40 -30.223101 82.100304
+40 -33.324799 87.4459
+0 1
+define_curve family FRACTURE_CURVE19 tetra_size 7.41641 name c1.152
+unstruct_curve n_points 2 n_edges 1
+40 -33.324799 87.4459
+40 -38.976299 89.947495
+0 1
+define_curve family FRACTURE_CURVE19 tetra_size 7.41641 name c1.153
+unstruct_curve n_points 2 n_edges 1
+40 -38.976299 89.947495
+40 -45.018799 88.649399
+0 1
+define_curve family FRACTURE_CURVE19 tetra_size 7.41641 name c1.154
+unstruct_curve n_points 2 n_edges 1
+40 -45.018799 88.649399
+40 -49.144302 84.047501
+0 1
+define_curve family FRACTURE_CURVE19 tetra_size 7.41641 name c1.155
+unstruct_curve n_points 2 n_edges 1
+40 -49.144302 84.047501
+40 -49.776897 77.899704
+0 1
+define_curve family FRACTURE_CURVE19 tetra_size 7.41641 name c1.156
+unstruct_curve n_points 2 n_edges 1
+40 -49.776897 77.899704
+40 -46.675198 72.5541
+0 1
+define_curve family FRACTURE_CURVE19 tetra_size 7.41641 name c1.157
+unstruct_curve n_points 2 n_edges 1
+40 -46.675198 72.5541
+40 -41.023701 70.052498
+0 1
+define_curve family FRACTURE_CURVE19 tetra_size 7.41641 name c1.158
+unstruct_curve n_points 2 n_edges 1
+40 -41.023701 70.052498
+40 -34.981201 71.350601
+0 1
+define_curve family FRACTURE_CURVE19 tetra_size 7.41641 name c1.159
+unstruct_curve n_points 2 n_edges 1
+40 -34.981201 71.350601
+40 -30.8557 75.952499
+0 1
+define_curve family FRACTURE_CURVE1 tetra_size 7.41641 name c1.160
+unstruct_curve n_points 2 n_edges 1
+0 27.7519 86.317307
+0 22.558201 89.667305
+0 1
+define_curve family FRACTURE_CURVE1 tetra_size 7.41641 name c1.161
+unstruct_curve n_points 2 n_edges 1
+0 22.558201 89.667305
+0 16.387299 89.3246
+0 1
+define_curve family FRACTURE_CURVE1 tetra_size 7.41641 name c1.162
+unstruct_curve n_points 2 n_edges 1
+0 16.387299 89.3246
+0 11.5964 85.420303
+0 1
+define_curve family FRACTURE_CURVE1 tetra_size 7.41641 name c1.163
+unstruct_curve n_points 2 n_edges 1
+0 11.5964 85.420303
+0 10.0154 79.445602
+0 1
+define_curve family FRACTURE_CURVE1 tetra_size 7.41641 name c1.164
+unstruct_curve n_points 2 n_edges 1
+0 10.0154 79.445602
+0 12.2481 73.682701
+0 1
+define_curve family FRACTURE_CURVE1 tetra_size 7.41641 name c1.165
+unstruct_curve n_points 2 n_edges 1
+0 12.2481 73.682701
+0 17.441801 70.332695
+0 1
+define_curve family FRACTURE_CURVE1 tetra_size 7.41641 name c1.166
+unstruct_curve n_points 2 n_edges 1
+0 17.441801 70.332695
+0 23.6127 70.6754
+0 1
+define_curve family FRACTURE_CURVE1 tetra_size 7.41641 name c1.167
+unstruct_curve n_points 2 n_edges 1
+0 23.6127 70.6754
+0 28.403601 74.579704
+0 1
+define_curve family FRACTURE_CURVE1 tetra_size 7.41641 name c1.168
+unstruct_curve n_points 2 n_edges 1
+0 28.403601 74.579704
+0 29.984598 80.554398
+0 1
+define_curve family FRACTURE_CURVE1 tetra_size 7.41641 name c1.169
+unstruct_curve n_points 2 n_edges 1
+0 29.984598 80.554398
+0 27.7519 86.317307
+0 1
+define_curve family FRACTURE_CURVE20 tetra_size 7.41641 name c1.170
+unstruct_curve n_points 2 n_edges 1
+-40 1.2872999 89.916794
+-40 -4.7874999 88.779503
+0 1
+define_curve family FRACTURE_CURVE20 tetra_size 7.41641 name c1.171
+unstruct_curve n_points 2 n_edges 1
+-40 -4.7874999 88.779503
+-40 -9.0336399 84.288795
+0 1
+define_curve family FRACTURE_CURVE20 tetra_size 7.41641 name c1.172
+unstruct_curve n_points 2 n_edges 1
+-40 -9.0336399 84.288795
+-40 -9.8292294 78.159798
+0 1
+define_curve family FRACTURE_CURVE20 tetra_size 7.41641 name c1.173
+unstruct_curve n_points 2 n_edges 1
+-40 -9.8292294 78.159798
+-40 -6.8703899 72.733795
+0 1
+define_curve family FRACTURE_CURVE20 tetra_size 7.41641 name c1.174
+unstruct_curve n_points 2 n_edges 1
+-40 -6.8703899 72.733795
+-40 -1.2872999 70.083199
+0 1
+define_curve family FRACTURE_CURVE20 tetra_size 7.41641 name c1.175
+unstruct_curve n_points 2 n_edges 1
+-40 -1.2872999 70.083199
+-40 4.7874999 71.220497
+0 1
+define_curve family FRACTURE_CURVE20 tetra_size 7.41641 name c1.176
+unstruct_curve n_points 2 n_edges 1
+-40 4.7874999 71.220497
+-40 9.0336399 75.711197
+0 1
+define_curve family FRACTURE_CURVE20 tetra_size 7.41641 name c1.177
+unstruct_curve n_points 2 n_edges 1
+-40 9.0336399 75.711197
+-40 9.8292294 81.840195
+0 1
+define_curve family FRACTURE_CURVE20 tetra_size 7.41641 name c1.178
+unstruct_curve n_points 2 n_edges 1
+-40 9.8292294 81.840195
+-40 6.8703899 87.266197
+0 1
+define_curve family FRACTURE_CURVE20 tetra_size 7.41641 name c1.179
+unstruct_curve n_points 2 n_edges 1
+-40 6.8703899 87.266197
+-40 1.2872999 89.916794
+0 1
+define_curve family FRACTURE_CURVE21 tetra_size 7.41641 name c1.180
+unstruct_curve n_points 2 n_edges 1
+-40 23.034498 89.528496
+-40 16.8543 89.492302
+0 1
+define_curve family FRACTURE_CURVE21 tetra_size 7.41641 name c1.181
+unstruct_curve n_points 2 n_edges 1
+-40 16.8543 89.492302
+-40 11.8756 85.830399
+0 1
+define_curve family FRACTURE_CURVE21 tetra_size 7.41641 name c1.182
+unstruct_curve n_points 2 n_edges 1
+-40 11.8756 85.830399
+-40 10.0002 79.941498
+0 1
+define_curve family FRACTURE_CURVE21 tetra_size 7.41641 name c1.183
+unstruct_curve n_points 2 n_edges 1
+-40 10.0002 79.941498
+-40 11.944301 74.074898
+0 1
+define_curve family FRACTURE_CURVE21 tetra_size 7.41641 name c1.184
+unstruct_curve n_points 2 n_edges 1
+-40 11.944301 74.074898
+-40 16.9655 70.471497
+0 1
+define_curve family FRACTURE_CURVE21 tetra_size 7.41641 name c1.185
+unstruct_curve n_points 2 n_edges 1
+-40 16.9655 70.471497
+-40 23.1457 70.507698
+0 1
+define_curve family FRACTURE_CURVE21 tetra_size 7.41641 name c1.186
+unstruct_curve n_points 2 n_edges 1
+-40 23.1457 70.507698
+-40 28.124399 74.169601
+0 1
+define_curve family FRACTURE_CURVE21 tetra_size 7.41641 name c1.187
+unstruct_curve n_points 2 n_edges 1
+-40 28.124399 74.169601
+-40 29.9998 80.058502
+0 1
+define_curve family FRACTURE_CURVE21 tetra_size 7.41641 name c1.188
+unstruct_curve n_points 2 n_edges 1
+-40 29.9998 80.058502
+-40 28.0557 85.925095
+0 1
+define_curve family FRACTURE_CURVE21 tetra_size 7.41641 name c1.189
+unstruct_curve n_points 2 n_edges 1
+-40 28.0557 85.925095
+-40 23.034498 89.528496
+0 1
+define_curve family FRACTURE_CURVE22 tetra_size 7.41641 name c1.190
+unstruct_curve n_points 2 n_edges 1
+-40 48.5597 85.170303
+-40 43.885899 89.214096
+0 1
+define_curve family FRACTURE_CURVE22 tetra_size 7.41641 name c1.191
+unstruct_curve n_points 2 n_edges 1
+-40 43.885899 89.214096
+-40 37.727798 89.738396
+0 1
+define_curve family FRACTURE_CURVE22 tetra_size 7.41641 name c1.192
+unstruct_curve n_points 2 n_edges 1
+-40 37.727798 89.738396
+-40 32.437698 86.542999
+0 1
+define_curve family FRACTURE_CURVE22 tetra_size 7.41641 name c1.193
+unstruct_curve n_points 2 n_edges 1
+-40 32.437698 86.542999
+-40 30.0361 80.848396
+0 1
+define_curve family FRACTURE_CURVE22 tetra_size 7.41641 name c1.194
+unstruct_curve n_points 2 n_edges 1
+-40 30.0361 80.848396
+-40 31.4403 74.829704
+0 1
+define_curve family FRACTURE_CURVE22 tetra_size 7.41641 name c1.195
+unstruct_curve n_points 2 n_edges 1
+-40 31.4403 74.829704
+-40 36.114098 70.785896
+0 1
+define_curve family FRACTURE_CURVE22 tetra_size 7.41641 name c1.196
+unstruct_curve n_points 2 n_edges 1
+-40 36.114098 70.785896
+-40 42.272202 70.261597
+0 1
+define_curve family FRACTURE_CURVE22 tetra_size 7.41641 name c1.197
+unstruct_curve n_points 2 n_edges 1
+-40 42.272202 70.261597
+-40 47.562298 73.457001
+0 1
+define_curve family FRACTURE_CURVE22 tetra_size 7.41641 name c1.198
+unstruct_curve n_points 2 n_edges 1
+-40 47.562298 73.457001
+-40 49.963902 79.151596
+0 1
+define_curve family FRACTURE_CURVE22 tetra_size 7.41641 name c1.199
+unstruct_curve n_points 2 n_edges 1
+-40 49.963902 79.151596
+-40 48.5597 85.170303
+0 1
+define_curve family FRACTURE_CURVE23 tetra_size 7.41641 name c1.200
+unstruct_curve n_points 2 n_edges 1
+-40 -12.505699 86.620895
+-40 -17.8286 89.761391
+0 1
+define_curve family FRACTURE_CURVE23 tetra_size 7.41641 name c1.201
+unstruct_curve n_points 2 n_edges 1
+-40 -17.8286 89.761391
+-40 -23.9809 89.173393
+0 1
+define_curve family FRACTURE_CURVE23 tetra_size 7.41641 name c1.202
+unstruct_curve n_points 2 n_edges 1
+-40 -23.9809 89.173393
+-40 -28.6127 85.081505
+0 1
+define_curve family FRACTURE_CURVE23 tetra_size 7.41641 name c1.203
+unstruct_curve n_points 2 n_edges 1
+-40 -28.6127 85.081505
+-40 -29.954599 79.048599
+0 1
+define_curve family FRACTURE_CURVE23 tetra_size 7.41641 name c1.204
+unstruct_curve n_points 2 n_edges 1
+-40 -29.954599 79.048599
+-40 -27.494299 73.379097
+0 1
+define_curve family FRACTURE_CURVE23 tetra_size 7.41641 name c1.205
+unstruct_curve n_points 2 n_edges 1
+-40 -27.494299 73.379097
+-40 -22.171398 70.238594
+0 1
+define_curve family FRACTURE_CURVE23 tetra_size 7.41641 name c1.206
+unstruct_curve n_points 2 n_edges 1
+-40 -22.171398 70.238594
+-40 -16.0191 70.826599
+0 1
+define_curve family FRACTURE_CURVE23 tetra_size 7.41641 name c1.207
+unstruct_curve n_points 2 n_edges 1
+-40 -16.0191 70.826599
+-40 -11.3873 74.918503
+0 1
+define_curve family FRACTURE_CURVE23 tetra_size 7.41641 name c1.208
+unstruct_curve n_points 2 n_edges 1
+-40 -11.3873 74.918503
+-40 -10.0454 80.951401
+0 1
+define_curve family FRACTURE_CURVE23 tetra_size 7.41641 name c1.209
+unstruct_curve n_points 2 n_edges 1
+-40 -10.0454 80.951401
+-40 -12.505699 86.620895
+0 1
+define_curve family FRACTURE_CURVE24 tetra_size 7.41641 name c1.210
+unstruct_curve n_points 2 n_edges 1
+-40 -32.365501 86.458702
+-40 -37.6199 89.712593
+0 1
+define_curve family FRACTURE_CURVE24 tetra_size 7.41641 name c1.211
+unstruct_curve n_points 2 n_edges 1
+-40 -37.6199 89.712593
+-40 -43.783398 89.256699
+0 1
+define_curve family FRACTURE_CURVE24 tetra_size 7.41641 name c1.212
+unstruct_curve n_points 2 n_edges 1
+-40 -43.783398 89.256699
+-40 -48.501801 85.264999
+0 1
+define_curve family FRACTURE_CURVE24 tetra_size 7.41641 name c1.213
+unstruct_curve n_points 2 n_edges 1
+-40 -48.501801 85.264999
+-40 -49.972698 79.262199
+0 1
+define_curve family FRACTURE_CURVE24 tetra_size 7.41641 name c1.214
+unstruct_curve n_points 2 n_edges 1
+-40 -49.972698 79.262199
+-40 -47.634502 73.541298
+0 1
+define_curve family FRACTURE_CURVE24 tetra_size 7.41641 name c1.215
+unstruct_curve n_points 2 n_edges 1
+-40 -47.634502 73.541298
+-40 -42.380096 70.287399
+0 1
+define_curve family FRACTURE_CURVE24 tetra_size 7.41641 name c1.216
+unstruct_curve n_points 2 n_edges 1
+-40 -42.380096 70.287399
+-40 -36.216599 70.743301
+0 1
+define_curve family FRACTURE_CURVE24 tetra_size 7.41641 name c1.217
+unstruct_curve n_points 2 n_edges 1
+-40 -36.216599 70.743301
+-40 -31.498199 74.735001
+0 1
+define_curve family FRACTURE_CURVE24 tetra_size 7.41641 name c1.218
+unstruct_curve n_points 2 n_edges 1
+-40 -31.498199 74.735001
+-40 -30.0273 80.737793
+0 1
+define_curve family FRACTURE_CURVE24 tetra_size 7.41641 name c1.219
+unstruct_curve n_points 2 n_edges 1
+-40 -30.0273 80.737793
+-40 -32.365501 86.458702
+0 1
+define_curve family FRACTURE_CURVE2 tetra_size 7.41641 name c1.220
+unstruct_curve n_points 2 n_edges 1
+0 47.335098 86.796799
+0 41.939198 89.810196
+0 1
+define_curve family FRACTURE_CURVE2 tetra_size 7.41641 name c1.221
+unstruct_curve n_points 2 n_edges 1
+0 41.939198 89.810196
+0 35.802601 89.076393
+0 1
+define_curve family FRACTURE_CURVE2 tetra_size 7.41641 name c1.222
+unstruct_curve n_points 2 n_edges 1
+0 35.802601 89.076393
+0 31.269199 84.875801
+0 1
+define_curve family FRACTURE_CURVE2 tetra_size 7.41641 name c1.223
+unstruct_curve n_points 2 n_edges 1
+0 31.269199 84.875801
+0 30.0707 78.812798
+0 1
+define_curve family FRACTURE_CURVE2 tetra_size 7.41641 name c1.224
+unstruct_curve n_points 2 n_edges 1
+0 30.0707 78.812798
+0 32.664898 73.203194
+0 1
+define_curve family FRACTURE_CURVE2 tetra_size 7.41641 name c1.225
+unstruct_curve n_points 2 n_edges 1
+0 32.664898 73.203194
+0 38.060799 70.189796
+0 1
+define_curve family FRACTURE_CURVE2 tetra_size 7.41641 name c1.226
+unstruct_curve n_points 2 n_edges 1
+0 38.060799 70.189796
+0 44.197403 70.923599
+0 1
+define_curve family FRACTURE_CURVE2 tetra_size 7.41641 name c1.227
+unstruct_curve n_points 2 n_edges 1
+0 44.197403 70.923599
+0 48.730801 75.124199
+0 1
+define_curve family FRACTURE_CURVE2 tetra_size 7.41641 name c1.228
+unstruct_curve n_points 2 n_edges 1
+0 48.730801 75.124199
+0 49.929302 81.187202
+0 1
+define_curve family FRACTURE_CURVE2 tetra_size 7.41641 name c1.229
+unstruct_curve n_points 2 n_edges 1
+0 49.929302 81.187202
+0 47.335098 86.796799
+0 1
+define_curve family FRACTURE_CURVE3 tetra_size 7.41641 name c1.230
+unstruct_curve n_points 2 n_edges 1
+0 -12.1793 86.231903
+0 -17.335899 89.638603
+0 1
+define_curve family FRACTURE_CURVE3 tetra_size 7.41641 name c1.231
+unstruct_curve n_points 2 n_edges 1
+0 -17.335899 89.638603
+0 -23.510099 89.363701
+0 1
+define_curve family FRACTURE_CURVE3 tetra_size 7.41641 name c1.232
+unstruct_curve n_points 2 n_edges 1
+0 -23.510099 89.363701
+0 -28.343601 85.512192
+0 1
+define_curve family FRACTURE_CURVE3 tetra_size 7.41641 name c1.233
+unstruct_curve n_points 2 n_edges 1
+0 -28.343601 85.512192
+0 -29.990099 79.555199
+0 1
+define_curve family FRACTURE_CURVE3 tetra_size 7.41641 name c1.234
+unstruct_curve n_points 2 n_edges 1
+0 -29.990099 79.555199
+0 -27.8207 73.768097
+0 1
+define_curve family FRACTURE_CURVE3 tetra_size 7.41641 name c1.235
+unstruct_curve n_points 2 n_edges 1
+0 -27.8207 73.768097
+0 -22.664099 70.361397
+0 1
+define_curve family FRACTURE_CURVE3 tetra_size 7.41641 name c1.236
+unstruct_curve n_points 2 n_edges 1
+0 -22.664099 70.361397
+0 -16.489899 70.636299
+0 1
+define_curve family FRACTURE_CURVE3 tetra_size 7.41641 name c1.237
+unstruct_curve n_points 2 n_edges 1
+0 -16.489899 70.636299
+0 -11.6564 74.487793
+0 1
+define_curve family FRACTURE_CURVE3 tetra_size 7.41641 name c1.238
+unstruct_curve n_points 2 n_edges 1
+0 -11.6564 74.487793
+0 -10.0099 80.444801
+0 1
+define_curve family FRACTURE_CURVE3 tetra_size 7.41641 name c1.239
+unstruct_curve n_points 2 n_edges 1
+0 -10.0099 80.444801
+0 -12.1793 86.231903
+0 1
+define_curve family FRACTURE_CURVE4 tetra_size 7.41641 name c1.240
+unstruct_curve n_points 2 n_edges 1
+0 -30.8356 84.001694
+0 -34.937901 88.6241
+0 1
+define_curve family FRACTURE_CURVE4 tetra_size 7.41641 name c1.241
+unstruct_curve n_points 2 n_edges 1
+0 -34.937901 88.6241
+0 -40.973797 89.952499
+0 1
+define_curve family FRACTURE_CURVE4 tetra_size 7.41641 name c1.242
+unstruct_curve n_points 2 n_edges 1
+0 -40.973797 89.952499
+0 -46.637798 87.479294
+0 1
+define_curve family FRACTURE_CURVE4 tetra_size 7.41641 name c1.243
+unstruct_curve n_points 2 n_edges 1
+0 -46.637798 87.479294
+0 -49.766296 82.149292
+0 1
+define_curve family FRACTURE_CURVE4 tetra_size 7.41641 name c1.244
+unstruct_curve n_points 2 n_edges 1
+0 -49.766296 82.149292
+0 -49.164398 75.998299
+0 1
+define_curve family FRACTURE_CURVE4 tetra_size 7.41641 name c1.245
+unstruct_curve n_points 2 n_edges 1
+0 -49.164398 75.998299
+0 -45.062099 71.3759
+0 1
+define_curve family FRACTURE_CURVE4 tetra_size 7.41641 name c1.246
+unstruct_curve n_points 2 n_edges 1
+0 -45.062099 71.3759
+0 -39.026199 70.047501
+0 1
+define_curve family FRACTURE_CURVE4 tetra_size 7.41641 name c1.247
+unstruct_curve n_points 2 n_edges 1
+0 -39.026199 70.047501
+0 -33.362198 72.520699
+0 1
+define_curve family FRACTURE_CURVE4 tetra_size 7.41641 name c1.248
+unstruct_curve n_points 2 n_edges 1
+0 -33.362198 72.520699
+0 -30.2337 77.850693
+0 1
+define_curve family FRACTURE_CURVE4 tetra_size 7.41641 name c1.249
+unstruct_curve n_points 2 n_edges 1
+0 -30.2337 77.850693
+0 -30.8356 84.001694
+0 1
+define_curve family FRACTURE_CURVE5 tetra_size 7.41641 name c1.250
+unstruct_curve n_points 2 n_edges 1
+20 7.7453599 86.325302
+20 2.5482099 89.669899
+0 1
+define_curve family FRACTURE_CURVE5 tetra_size 7.41641 name c1.251
+unstruct_curve n_points 2 n_edges 1
+20 2.5482099 89.669899
+20 -3.6222699 89.3209
+0 1
+define_curve family FRACTURE_CURVE5 tetra_size 7.41641 name c1.252
+unstruct_curve n_points 2 n_edges 1
+20 -3.6222699 89.3209
+20 -8.4091597 85.411697
+0 1
+define_curve family FRACTURE_CURVE5 tetra_size 7.41641 name c1.253
+unstruct_curve n_points 2 n_edges 1
+20 -8.4091597 85.411697
+20 -9.9840393 79.435295
+0 1
+define_curve family FRACTURE_CURVE5 tetra_size 7.41641 name c1.254
+unstruct_curve n_points 2 n_edges 1
+20 -9.9840393 79.435295
+20 -7.7453599 73.674698
+0 1
+define_curve family FRACTURE_CURVE5 tetra_size 7.41641 name c1.255
+unstruct_curve n_points 2 n_edges 1
+20 -7.7453599 73.674698
+20 -2.5482099 70.330093
+0 1
+define_curve family FRACTURE_CURVE5 tetra_size 7.41641 name c1.256
+unstruct_curve n_points 2 n_edges 1
+20 -2.5482099 70.330093
+20 3.6222699 70.6791
+0 1
+define_curve family FRACTURE_CURVE5 tetra_size 7.41641 name c1.257
+unstruct_curve n_points 2 n_edges 1
+20 3.6222699 70.6791
+20 8.4091597 74.588303
+0 1
+define_curve family FRACTURE_CURVE5 tetra_size 7.41641 name c1.258
+unstruct_curve n_points 2 n_edges 1
+20 8.4091597 74.588303
+20 9.9840393 80.564697
+0 1
+define_curve family FRACTURE_CURVE5 tetra_size 7.41641 name c1.259
+unstruct_curve n_points 2 n_edges 1
+20 9.9840393 80.564697
+20 7.7453599 86.325302
+0 1
+define_curve family FRACTURE_CURVE6 tetra_size 7.41641 name c1.260
+unstruct_curve n_points 2 n_edges 1
+20 24.590799 88.884003
+20 18.4921 89.885704
+0 1
+define_curve family FRACTURE_CURVE6 tetra_size 7.41641 name c1.261
+unstruct_curve n_points 2 n_edges 1
+20 18.4921 89.885704
+20 12.9695 87.111397
+0 1
+define_curve family FRACTURE_CURVE6 tetra_size 7.41641 name c1.262
+unstruct_curve n_points 2 n_edges 1
+20 12.9695 87.111397
+20 10.132199 81.620796
+0 1
+define_curve family FRACTURE_CURVE6 tetra_size 7.41641 name c1.263
+unstruct_curve n_points 2 n_edges 1
+20 10.132199 81.620796
+20 11.0641 75.511093
+0 1
+define_curve family FRACTURE_CURVE6 tetra_size 7.41641 name c1.264
+unstruct_curve n_points 2 n_edges 1
+20 11.0641 75.511093
+20 15.4092 71.115997
+0 1
+define_curve family FRACTURE_CURVE6 tetra_size 7.41641 name c1.265
+unstruct_curve n_points 2 n_edges 1
+20 15.4092 71.115997
+20 21.5079 70.114304
+0 1
+define_curve family FRACTURE_CURVE6 tetra_size 7.41641 name c1.266
+unstruct_curve n_points 2 n_edges 1
+20 21.5079 70.114304
+20 27.0305 72.888596
+0 1
+define_curve family FRACTURE_CURVE6 tetra_size 7.41641 name c1.267
+unstruct_curve n_points 2 n_edges 1
+20 27.0305 72.888596
+20 29.8678 78.379196
+0 1
+define_curve family FRACTURE_CURVE6 tetra_size 7.41641 name c1.268
+unstruct_curve n_points 2 n_edges 1
+20 29.8678 78.379196
+20 28.9359 84.488892
+0 1
+define_curve family FRACTURE_CURVE6 tetra_size 7.41641 name c1.269
+unstruct_curve n_points 2 n_edges 1
+20 28.9359 84.488892
+20 24.590799 88.884003
+0 1
+define_curve family FRACTURE_CURVE7 tetra_size 7.41641 name c1.270
+unstruct_curve n_points 2 n_edges 1
+20 35.7276 70.958595
+20 41.857998 70.174103
+0 1
+define_curve family FRACTURE_CURVE7 tetra_size 7.41641 name c1.271
+unstruct_curve n_points 2 n_edges 1
+20 41.857998 70.174103
+20 47.278599 73.142799
+0 1
+define_curve family FRACTURE_CURVE7 tetra_size 7.41641 name c1.272
+unstruct_curve n_points 2 n_edges 1
+20 47.278599 73.142799
+20 49.919102 78.730698
+0 1
+define_curve family FRACTURE_CURVE7 tetra_size 7.41641 name c1.273
+unstruct_curve n_points 2 n_edges 1
+20 49.919102 78.730698
+20 48.770802 84.803398
+0 1
+define_curve family FRACTURE_CURVE7 tetra_size 7.41641 name c1.274
+unstruct_curve n_points 2 n_edges 1
+20 48.770802 84.803398
+20 44.2724 89.041397
+0 1
+define_curve family FRACTURE_CURVE7 tetra_size 7.41641 name c1.275
+unstruct_curve n_points 2 n_edges 1
+20 44.2724 89.041397
+20 38.141998 89.825897
+0 1
+define_curve family FRACTURE_CURVE7 tetra_size 7.41641 name c1.276
+unstruct_curve n_points 2 n_edges 1
+20 38.141998 89.825897
+20 32.721397 86.857193
+0 1
+define_curve family FRACTURE_CURVE7 tetra_size 7.41641 name c1.277
+unstruct_curve n_points 2 n_edges 1
+20 32.721397 86.857193
+20 30.0809 81.269302
+0 1
+define_curve family FRACTURE_CURVE7 tetra_size 7.41641 name c1.278
+unstruct_curve n_points 2 n_edges 1
+20 30.0809 81.269302
+20 31.229198 75.196602
+0 1
+define_curve family FRACTURE_CURVE7 tetra_size 7.41641 name c1.279
+unstruct_curve n_points 2 n_edges 1
+20 31.229198 75.196602
+20 35.7276 70.958595
+0 1
+define_curve family FRACTURE_CURVE8 tetra_size 7.41641 name c1.280
+unstruct_curve n_points 2 n_edges 1
+20 -10.897099 84.139694
+20 -15.0689 88.699692
+0 1
+define_curve family FRACTURE_CURVE8 tetra_size 7.41641 name c1.281
+unstruct_curve n_points 2 n_edges 1
+20 -15.0689 88.699692
+20 -21.124199 89.9366
+0 1
+define_curve family FRACTURE_CURVE8 tetra_size 7.41641 name c1.282
+unstruct_curve n_points 2 n_edges 1
+20 -21.124199 89.9366
+20 -26.750099 87.378098
+0 1
+define_curve family FRACTURE_CURVE8 tetra_size 7.41641 name c1.283
+unstruct_curve n_points 2 n_edges 1
+20 -26.750099 87.378098
+20 -29.797699 82.001396
+0 1
+define_curve family FRACTURE_CURVE8 tetra_size 7.41641 name c1.284
+unstruct_curve n_points 2 n_edges 1
+20 -29.797699 82.001396
+20 -29.1029 75.860298
+0 1
+define_curve family FRACTURE_CURVE8 tetra_size 7.41641 name c1.285
+unstruct_curve n_points 2 n_edges 1
+20 -29.1029 75.860298
+20 -24.931101 71.300293
+0 1
+define_curve family FRACTURE_CURVE8 tetra_size 7.41641 name c1.286
+unstruct_curve n_points 2 n_edges 1
+20 -24.931101 71.300293
+20 -18.875799 70.0634
+0 1
+define_curve family FRACTURE_CURVE8 tetra_size 7.41641 name c1.287
+unstruct_curve n_points 2 n_edges 1
+20 -18.875799 70.0634
+20 -13.2499 72.621895
+0 1
+define_curve family FRACTURE_CURVE8 tetra_size 7.41641 name c1.288
+unstruct_curve n_points 2 n_edges 1
+20 -13.2499 72.621895
+20 -10.202299 77.998596
+0 1
+define_curve family FRACTURE_CURVE8 tetra_size 7.41641 name c1.289
+unstruct_curve n_points 2 n_edges 1
+20 -10.202299 77.998596
+20 -10.897099 84.139694
+0 1
+define_curve family FRACTURE_CURVE9 tetra_size 7.41641 name c1.290
+unstruct_curve n_points 2 n_edges 1
+20 -33.7808 87.830795
+20 -39.5714 89.990799
+0 1
+define_curve family FRACTURE_CURVE9 tetra_size 7.41641 name c1.291
+unstruct_curve n_points 2 n_edges 1
+20 -39.5714 89.990799
+20 -45.525696 88.334694
+0 1
+define_curve family FRACTURE_CURVE9 tetra_size 7.41641 name c1.292
+unstruct_curve n_points 2 n_edges 1
+20 -45.525696 88.334694
+20 -49.3694 83.494995
+0 1
+define_curve family FRACTURE_CURVE9 tetra_size 7.41641 name c1.293
+unstruct_curve n_points 2 n_edges 1
+20 -49.3694 83.494995
+20 -49.6343 77.320297
+0 1
+define_curve family FRACTURE_CURVE9 tetra_size 7.41641 name c1.294
+unstruct_curve n_points 2 n_edges 1
+20 -49.6343 77.320297
+20 -46.219196 72.169197
+0 1
+define_curve family FRACTURE_CURVE9 tetra_size 7.41641 name c1.295
+unstruct_curve n_points 2 n_edges 1
+20 -46.219196 72.169197
+20 -40.4286 70.009201
+0 1
+define_curve family FRACTURE_CURVE9 tetra_size 7.41641 name c1.296
+unstruct_curve n_points 2 n_edges 1
+20 -40.4286 70.009201
+20 -34.4743 71.665298
+0 1
+define_curve family FRACTURE_CURVE9 tetra_size 7.41641 name c1.297
+unstruct_curve n_points 2 n_edges 1
+20 -34.4743 71.665298
+20 -30.6306 76.504997
+0 1
+define_curve family FRACTURE_CURVE9 tetra_size 7.41641 name c1.298
+unstruct_curve n_points 2 n_edges 1
+20 -30.6306 76.504997
+20 -30.3657 82.679695
+0 1
+define_curve family FRACTURE_CURVE9 tetra_size 7.41641 name c1.299
+unstruct_curve n_points 2 n_edges 1
+20 -30.3657 82.679695
+20 -33.7808 87.830795
+0 1
+define_surface name BOTTOM0 family BOTTOM tetra_size 1e+10
+bspline
+2,2,2,2,0
+0,0,200000,200000
+0,0,200000,200000
+-999.99997764826,-999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,-99.999997764826
+999.99997764826,-999.99997764826,-99.999997764826
+999.99997764826,999.99997764826,-99.999997764826
+define_surface name TOP1 family TOP tetra_size 1e+10
+bspline
+2,2,2,2,0
+0,0,200000,200000
+0,0,200000,200000
+-999.99997764826,-999.99997764826,99.999997764826
+-999.99997764826,999.99997764826,99.999997764826
+999.99997764826,-999.99997764826,99.999997764826
+999.99997764826,999.99997764826,99.999997764826
+define_surface name FRONT2 family FRONT tetra_size 1e+10
+bspline
+2,2,2,2,0
+0,0,20000,20000
+0,0,200000,200000
+-999.99997764826,-999.99997764826,99.999997764826
+-999.99997764826,-999.99997764826,-99.999997764826
+999.99997764826,-999.99997764826,99.999997764826
+999.99997764826,-999.99997764826,-99.999997764826
+define_surface name BACK3 family BACK tetra_size 1e+10
+bspline
+2,2,2,2,0
+0,0,20000,20000
+0,0,200000,200000
+-999.99997764826,999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,99.999997764826
+999.99997764826,999.99997764826,-99.999997764826
+999.99997764826,999.99997764826,99.999997764826
+define_surface name RIGHT4 family RIGHT tetra_size 1e+10
+bspline
+2,2,2,2,0
+0,0,20000,20000
+0,0,200000,200000
+999.99997764826,-999.99997764826,-99.999997764826
+999.99997764826,-999.99997764826,99.999997764826
+999.99997764826,999.99997764826,-99.999997764826
+999.99997764826,999.99997764826,99.999997764826
+define_surface name LEFT5 family LEFT tetra_size 1e+10
+bspline
+2,2,2,2,0
+0,0,20000,20000
+0,0,200000,200000
+-999.99997764826,-999.99997764826,-99.999997764826
+-999.99997764826,-999.99997764826,99.999997764826
+-999.99997764826,999.99997764826,-99.999997764826
+-999.99997764826,999.99997764826,99.999997764826
+define_surface name SOLID1/f1 family INTLENS_G_S tetra_size 50
+trim_surface n_loops 1
+loop n_curves 4
+coedge
+polyline n_points 3
+0,0
+39587.98910167,0
+79175.97820334,0
+coedge
+polyline n_points 2
+79175.97820334,0
+79175.97820334,243933.15513757
+coedge
+polyline n_points 3
+79175.97820334,243933.15513757
+39587.98910167,243933.15513757
+0,243933.15513757
+coedge
+polyline n_points 2
+0,243933.15513757
+0,0
+bspline
+9,9,3,3,1
+0,0,0,38725.53569695,38725.53569695
+39950.76248402,39950.76248402,41175.98927108,41175.98927108,79175.97820334
+79175.97820334,79175.97820334
+0,0,0,60983.288784393,60983.288784393
+121966.57756879,121966.57756879,182949.86635318,182949.86635318,243933.15513757
+243933.15513757,243933.15513757
+0,0,0,1
+0,193.01097863748,-1.6214580083078e-13,0.99045103240772
+0,382.33582132385,53.218905537385,1
+0,293.7889343498,41.675394790674,0.75427613592277
+0,388.4713761438,62.626108056647,1
+0,292.24046921256,52.799367072563,0.75427613592277
+0,379.99988082895,69.999998435378,1
+0,189.99994041447,69.999998435378,1
+0,0,69.999998435378,1
+0,0,0,0.70710678118655
+136.4793470588,136.4793470588,-1.146543744917e-13,0.70035464144872
+270.35223806798,270.35223806798,37.631447060708,0.70710678118655
+207.74012627916,207.74012627916,29.468951224146,0.53335377059817
+274.69073026475,274.69073026475,44.283343412546,0.70710678118655
+206.64519619316,206.64519619316,37.334786646709,0.53335377059817
+268.70047878839,268.70047878839,49.497471035364,0.70710678118655
+134.3502393942,134.3502393942,49.497471035364,0.70710678118655
+0,0,49.497471035364,0.70710678118655
+0,0,0,1
+193.01097863748,1.1818513859434e-14,-1.6214580083078e-13,0.99045103240772
+382.33582132385,2.3411316989181e-14,53.218905537385,1
+293.7889343498,1.798938390382e-14,41.675394790674,0.75427613592277
+388.4713761438,2.3787011367743e-14,62.626108056647,1
+292.24046921256,1.7894567760124e-14,52.799367072563,0.75427613592277
+379.99988082895,2.3268281886677e-14,69.999998435378,1
+189.99994041447,1.1634140943339e-14,69.999998435378,1
+0,0,69.999998435378,1
+0,0,0,0.70710678118655
+136.4793470588,-136.4793470588,-1.146543744917e-13,0.70035464144872
+270.35223806798,-270.35223806798,37.631447060708,0.70710678118655
+207.74012627916,-207.74012627916,29.468951224146,0.53335377059817
+274.69073026475,-274.69073026475,44.283343412546,0.70710678118655
+206.64519619316,-206.64519619316,37.334786646709,0.53335377059817
+268.70047878839,-268.70047878839,49.497471035364,0.70710678118655
+134.3502393942,-134.3502393942,49.497471035364,0.70710678118655
+0,0,49.497471035364,0.70710678118655
+0,0,0,1
+2.3637027718869e-14,-193.01097863748,-1.6214580083078e-13,0.99045103240772
+4.6822633978363e-14,-382.33582132385,53.218905537385,1
+3.597876780764e-14,-293.7889343498,41.675394790674,0.75427613592277
+4.7574022735487e-14,-388.4713761438,62.626108056647,1
+3.5789135520247e-14,-292.24046921256,52.799367072563,0.75427613592277
+4.6536563773355e-14,-379.99988082895,69.999998435378,1
+2.3268281886677e-14,-189.99994041447,69.999998435378,1
+0,0,69.999998435378,1
+0,0,0,0.70710678118655
+-136.4793470588,-136.4793470588,-1.146543744917e-13,0.70035464144872
+-270.35223806798,-270.35223806798,37.631447060708,0.70710678118655
+-207.74012627916,-207.74012627916,29.468951224146,0.53335377059817
+-274.69073026475,-274.69073026475,44.283343412546,0.70710678118655
+-206.64519619316,-206.64519619316,37.334786646709,0.53335377059817
+-268.70047878839,-268.70047878839,49.497471035364,0.70710678118655
+-134.3502393942,-134.3502393942,49.497471035364,0.70710678118655
+0,0,49.497471035364,0.70710678118655
+0,0,0,1
+-193.01097863748,-3.5455541578303e-14,-1.6214580083078e-13,0.99045103240772
+-382.33582132385,-7.0233950967544e-14,53.218905537385,1
+-293.7889343498,-5.3968151711459e-14,41.675394790674,0.75427613592277
+-388.4713761438,-7.136103410323e-14,62.626108056647,1
+-292.24046921256,-5.3683703280372e-14,52.799367072563,0.75427613592277
+-379.99988082895,-6.9804845660032e-14,69.999998435378,1
+-189.99994041447,-3.4902422830016e-14,69.999998435378,1
+0,0,69.999998435378,1
+0,0,0,0.70710678118655
+-136.4793470588,136.4793470588,-1.146543744917e-13,0.70035464144872
+-270.35223806798,270.35223806798,37.631447060708,0.70710678118655
+-207.74012627916,207.74012627916,29.468951224146,0.53335377059817
+-274.69073026475,274.69073026475,44.283343412546,0.70710678118655
+-206.64519619316,206.64519619316,37.334786646709,0.53335377059817
+-268.70047878839,268.70047878839,49.497471035364,0.70710678118655
+-134.3502393942,134.3502393942,49.497471035364,0.70710678118655
+0,0,49.497471035364,0.70710678118655
+0,0,0,1
+-4.7274055437737e-14,193.01097863748,-1.6214580083078e-13,0.99045103240772
+-9.3645267956725e-14,382.33582132385,53.218905537385,1
+-7.1957535615279e-14,293.7889343498,41.675394790674,0.75427613592277
+-9.5148045470973e-14,388.4713761438,62.626108056647,1
+-7.1578271040495e-14,292.24046921256,52.799367072563,0.75427613592277
+-9.3073127546709e-14,379.99988082895,69.999998435378,1
+-4.6536563773355e-14,189.99994041447,69.999998435378,1
+0,0,69.999998435378,1
+define_surface name SOLID1/f1.7 family INTLENS_G_S tetra_size 50
+trim_surface n_loops 1
+loop n_curves 4
+coedge
+polyline n_points 3
+0,0
+39587.98910167,0
+79175.97820334,0
+coedge
+polyline n_points 2
+79175.97820334,0
+79175.97820334,243933.15513757
+coedge
+polyline n_points 3
+79175.97820334,243933.15513757
+39587.98910167,243933.15513757
+0,243933.15513757
+coedge
+polyline n_points 2
+0,243933.15513757
+0,0
+bspline
+9,9,3,3,1
+0,0,0,38725.53569695,38725.53569695
+39950.76248402,39950.76248402,41175.98927108,41175.98927108,79175.97820334
+79175.97820334,79175.97820334
+0,0,0,60983.288784393,60983.288784393
+121966.57756879,121966.57756879,182949.86635318,182949.86635318,243933.15513757
+243933.15513757,243933.15513757
+0,0,0,1
+0,193.01097863748,-1.6214580083078e-13,0.99045103240772
+0,382.33582132385,53.218905537385,1
+0,293.7889343498,41.675394790674,0.75427613592277
+0,388.4713761438,62.626108056647,1
+0,292.24046921256,52.799367072563,0.75427613592277
+0,379.99988082895,69.999998435378,1
+0,189.99994041447,69.999998435378,1
+0,0,69.999998435378,1
+0,0,0,0.70710678118655
+136.4793470588,136.4793470588,-1.146543744917e-13,0.70035464144872
+270.35223806798,270.35223806798,37.631447060708,0.70710678118655
+207.74012627916,207.74012627916,29.468951224146,0.53335377059817
+274.69073026475,274.69073026475,44.283343412546,0.70710678118655
+206.64519619316,206.64519619316,37.334786646709,0.53335377059817
+268.70047878839,268.70047878839,49.497471035364,0.70710678118655
+134.3502393942,134.3502393942,49.497471035364,0.70710678118655
+0,0,49.497471035364,0.70710678118655
+0,0,0,1
+193.01097863748,1.1818513859434e-14,-1.6214580083078e-13,0.99045103240772
+382.33582132385,2.3411316989181e-14,53.218905537385,1
+293.7889343498,1.798938390382e-14,41.675394790674,0.75427613592277
+388.4713761438,2.3787011367743e-14,62.626108056647,1
+292.24046921256,1.7894567760124e-14,52.799367072563,0.75427613592277
+379.99988082895,2.3268281886677e-14,69.999998435378,1
+189.99994041447,1.1634140943339e-14,69.999998435378,1
+0,0,69.999998435378,1
+0,0,0,0.70710678118655
+136.4793470588,-136.4793470588,-1.146543744917e-13,0.70035464144872
+270.35223806798,-270.35223806798,37.631447060708,0.70710678118655
+207.74012627916,-207.74012627916,29.468951224146,0.53335377059817
+274.69073026475,-274.69073026475,44.283343412546,0.70710678118655
+206.64519619316,-206.64519619316,37.334786646709,0.53335377059817
+268.70047878839,-268.70047878839,49.497471035364,0.70710678118655
+134.3502393942,-134.3502393942,49.497471035364,0.70710678118655
+0,0,49.497471035364,0.70710678118655
+0,0,0,1
+2.3637027718869e-14,-193.01097863748,-1.6214580083078e-13,0.99045103240772
+4.6822633978363e-14,-382.33582132385,53.218905537385,1
+3.597876780764e-14,-293.7889343498,41.675394790674,0.75427613592277
+4.7574022735487e-14,-388.4713761438,62.626108056647,1
+3.5789135520247e-14,-292.24046921256,52.799367072563,0.75427613592277
+4.6536563773355e-14,-379.99988082895,69.999998435378,1
+2.3268281886677e-14,-189.99994041447,69.999998435378,1
+0,0,69.999998435378,1
+0,0,0,0.70710678118655
+-136.4793470588,-136.4793470588,-1.146543744917e-13,0.70035464144872
+-270.35223806798,-270.35223806798,37.631447060708,0.70710678118655
+-207.74012627916,-207.74012627916,29.468951224146,0.53335377059817
+-274.69073026475,-274.69073026475,44.283343412546,0.70710678118655
+-206.64519619316,-206.64519619316,37.334786646709,0.53335377059817
+-268.70047878839,-268.70047878839,49.497471035364,0.70710678118655
+-134.3502393942,-134.3502393942,49.497471035364,0.70710678118655
+0,0,49.497471035364,0.70710678118655
+0,0,0,1
+-193.01097863748,-3.5455541578303e-14,-1.6214580083078e-13,0.99045103240772
+-382.33582132385,-7.0233950967544e-14,53.218905537385,1
+-293.7889343498,-5.3968151711459e-14,41.675394790674,0.75427613592277
+-388.4713761438,-7.136103410323e-14,62.626108056647,1
+-292.24046921256,-5.3683703280372e-14,52.799367072563,0.75427613592277
+-379.99988082895,-6.9804845660032e-14,69.999998435378,1
+-189.99994041447,-3.4902422830016e-14,69.999998435378,1
+0,0,69.999998435378,1
+0,0,0,0.70710678118655
+-136.4793470588,136.4793470588,-1.146543744917e-13,0.70035464144872
+-270.35223806798,270.35223806798,37.631447060708,0.70710678118655
+-207.74012627916,207.74012627916,29.468951224146,0.53335377059817
+-274.69073026475,274.69073026475,44.283343412546,0.70710678118655
+-206.64519619316,206.64519619316,37.334786646709,0.53335377059817
+-268.70047878839,268.70047878839,49.497471035364,0.70710678118655
+-134.3502393942,134.3502393942,49.497471035364,0.70710678118655
+0,0,49.497471035364,0.70710678118655
+0,0,0,1
+-4.7274055437737e-14,193.01097863748,-1.6214580083078e-13,0.99045103240772
+-9.3645267956725e-14,382.33582132385,53.218905537385,1
+-7.1957535615279e-14,293.7889343498,41.675394790674,0.75427613592277
+-9.5148045470973e-14,388.4713761438,62.626108056647,1
+-7.1578271040495e-14,292.24046921256,52.799367072563,0.75427613592277
+-9.3073127546709e-14,379.99988082895,69.999998435378,1
+-4.6536563773355e-14,189.99994041447,69.999998435378,1
+0,0,69.999998435378,1
+define_surface name FRAC0_S0 family FRAC0_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+0,0,79.999998211861,1
+0,9.9802962847575,79.37255769826,1
+0,0,79.999998211861,1
+0,8.7405505373723,71.277292169011,0.85355339059327
+0,0,79.999998211861,1
+0,4.0641220721386,76.581161225618,0.85355339059327
+0,0,79.999998211861,1
+0,0.62744051360023,89.980294496618,1
+0,0,79.999998211861,1
+0,-2.993013983814,77.024828722569,0.85355339059327
+0,0,79.999998211861,1
+0,-8.2968830404207,72.348400257336,0.85355339059327
+0,0,79.999998211861,1
+0,-9.9802962847575,80.627438725461,1
+0,0,79.999998211861,1
+0,-8.7405505373723,65.291264201383,0.85355339059327
+0,0,79.999998211861,1
+0,-4.0641220721386,59.987395144776,0.85355339059327
+0,0,79.999998211861,1
+0,-0.62744051360023,70.019701927103,1
+0,0,79.999998211861,1
+0,2.993013983814,59.543727647825,0.85355339059327
+0,0,79.999998211861,1
+0,8.2968830404207,64.220156113058,0.85355339059327
+0,0,79.999998211861,1
+0,9.9802962847575,79.37255769826,1
+define_surface name FRAC10_S0 family FRAC10_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+-19.999999552965,0,79.999998211861,1
+-19.999999552965,8.6245832528882,85.061278607536,1
+-19.999999552965,0,79.999998211861,1
+-17.071069546299,5.5721101239993,75.653602792628,0.85355339059327
+-19.999999552965,0,79.999998211861,1
+-17.071069546299,-1.2708225484813,77.435254442075,0.85355339059327
+-19.999999552965,0,79.999998211861,1
+-19.999999552965,-5.0612803956757,88.624581464749,1
+-19.999999552965,0,79.999998211861,1
+-17.071069546299,-7.3693246074311,73.856388309196,0.85355339059327
+-19.999999552965,0,79.999998211861,1
+-17.071069546299,-9.1509762568776,67.013455636716,0.85355339059327
+-19.999999552965,0,79.999998211861,1
+-19.999999552965,-8.6245832528882,74.938717816185,1
+-19.999999552965,0,79.999998211861,1
+-17.071069546299,-5.5721101239993,60.914953577766,0.85355339059327
+-19.999999552965,0,79.999998211861,1
+-17.071069546299,1.2708225484813,59.133301928319,0.85355339059327
+-19.999999552965,0,79.999998211861,1
+-19.999999552965,5.0612803956757,71.375414958972,1
+-19.999999552965,0,79.999998211861,1
+-17.071069546299,7.3693246074311,62.712168061198,0.85355339059327
+-19.999999552965,0,79.999998211861,1
+-17.071069546299,9.1509762568776,69.555100733678,0.85355339059327
+-19.999999552965,0,79.999998211861,1
+-19.999999552965,8.6245832528882,85.061278607536,1
+define_surface name FRAC11_S0 family FRAC11_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+-19.999999552965,19.999999552965,79.999998211861,1
+-19.999999552965,28.93238888341,84.495820314546,1
+-19.999999552965,19.999999552965,79.999998211861,1
+-17.071069546299,23.105828345515,75.279779785437,0.85355339059327
+-19.999999552965,19.999999552965,79.999998211861,1
+-17.071069546299,16.391721796719,77.498063674278,0.85355339059327
+-19.999999552965,19.999999552965,79.999998211861,1
+-19.999999552965,15.504177450279,88.932387542306,1
+-19.999999552965,19.999999552965,79.999998211861,1
+-17.071069546299,10.07556794606,74.319036984412,0.85355339059327
+-19.999999552965,19.999999552965,79.999998211861,1
+-17.071069546299,7.8572840572179,67.604930435617,0.85355339059327
+-19.999999552965,19.999999552965,79.999998211861,1
+-19.999999552965,11.06761022252,75.504176109175,1
+-19.999999552965,19.999999552965,79.999998211861,1
+-17.071069546299,11.036310747084,61.288776584957,0.85355339059327
+-19.999999552965,19.999999552965,79.999998211861,1
+-17.071069546299,17.75041729588,59.070492696116,0.85355339059327
+-19.999999552965,19.999999552965,79.999998211861,1
+-19.999999552965,24.495821655651,71.067608881415,1
+-19.999999552965,19.999999552965,79.999998211861,1
+-17.071069546299,24.066571146539,62.249519385981,0.85355339059327
+-19.999999552965,19.999999552965,79.999998211861,1
+-17.071069546299,26.284855035381,68.963625934777,0.85355339059327
+-19.999999552965,19.999999552965,79.999998211861,1
+-19.999999552965,28.93238888341,84.495820314546,1
+define_surface name FRAC12_S0 family FRAC12_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+-19.999999552965,39.99999910593,79.999998211861,1
+-19.999999552965,45.463722999951,88.375421588596,1
+-19.999999552965,39.99999910593,79.999998211861,1
+-17.071069546299,35.844560026126,77.364868439622,0.85355339059327
+-19.999999552965,39.99999910593,79.999998211861,1
+-17.071069546299,28.924985533049,75.909018517808,0.85355339059327
+-19.999999552965,39.99999910593,79.999998211861,1
+-19.999999552965,31.624575729195,85.463722105881,1
+-19.999999552965,39.99999910593,79.999998211861,1
+-17.071069546299,25.061548838174,69.986699118724,0.85355339059327
+-19.999999552965,39.99999910593,79.999998211861,1
+-17.071069546299,26.517398759987,63.067124625648,0.85355339059327
+-19.999999552965,39.99999910593,79.999998211861,1
+-19.999999552965,34.53627521191,71.624574835126,1
+-19.999999552965,39.99999910593,79.999998211861,1
+-17.071069546299,32.439718159071,59.203687930772,0.85355339059327
+-19.999999552965,39.99999910593,79.999998211861,1
+-17.071069546299,39.359292652148,60.659537852586,0.85355339059327
+-19.999999552965,39.99999910593,79.999998211861,1
+-19.999999552965,48.375422482665,74.53627431784,1
+-19.999999552965,39.99999910593,79.999998211861,1
+-17.071069546299,43.222729347023,66.58185725167,0.85355339059327
+-19.999999552965,39.99999910593,79.999998211861,1
+-17.071069546299,41.76687942521,73.501431744746,0.85355339059327
+-19.999999552965,39.99999910593,79.999998211861,1
+-19.999999552965,45.463722999951,88.375421588596,1
+define_surface name FRAC13_S0 family FRAC13_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+-19.999999552965,-19.999999552965,79.999998211861,1
+-19.999999552965,-10.965444417836,84.286816267245,1
+-19.999999552965,-19.999999552965,79.999998211861,1
+-17.071069546299,-10.875212668554,75.137504721228,0.85355339059327
+-19.999999552965,-19.999999552965,79.999998211861,1
+-17.071069546299,-17.535900089419,77.511373555347,0.85355339059327
+-19.999999552965,-19.999999552965,79.999998211861,1
+-19.999999552965,-24.28681760835,89.034553346989,1
+-19.999999552965,-19.999999552965,79.999998211861,1
+-17.071069546299,-23.92429608233,74.480135062942,0.85355339059327
+-19.999999552965,-19.999999552965,79.999998211861,1
+-17.071069546299,-26.29816491645,67.819447642077,0.85355339059327
+-19.999999552965,-19.999999552965,79.999998211861,1
+-19.999999552965,-29.034554688094,75.713180156476,1
+-19.999999552965,-19.999999552965,79.999998211861,1
+-17.071069546299,-23.266926424045,61.431051649166,0.85355339059327
+-19.999999552965,-19.999999552965,79.999998211861,1
+-17.071069546299,-16.606239003179,59.057182815047,0.85355339059327
+-19.999999552965,-19.999999552965,79.999998211861,1
+-19.999999552965,-15.713181497581,70.965443076732,1
+-19.999999552965,-19.999999552965,79.999998211861,1
+-17.071069546299,-10.217843010268,62.088421307452,0.85355339059327
+-19.999999552965,-19.999999552965,79.999998211861,1
+-17.071069546299,-7.843974176149,68.749108728317,0.85355339059327
+-19.999999552965,-19.999999552965,79.999998211861,1
+-19.999999552965,-10.965444417836,84.286816267245,1
+define_surface name FRAC14_S0 family FRAC14_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+-19.999999552965,-39.99999910593,79.999998211861,1
+-19.999999552965,-33.328112387406,87.448885588163,1
+-19.999999552965,-39.99999910593,79.999998211861,1
+-17.071069546299,-31.08090657094,77.001170512856,0.85355339059327
+-19.999999552965,-39.99999910593,79.999998211861,1
+-17.071069546299,-38.141294493506,76.612670135811,0.85355339059327
+-19.999999552965,-39.99999910593,79.999998211861,1
+-19.999999552965,-47.448886482233,86.671884930385,1
+-19.999999552965,-39.99999910593,79.999998211861,1
+-17.071069546299,-42.859031420258,71.345510706856,0.85355339059327
+-19.999999552965,-39.99999910593,79.999998211861,1
+-17.071069546299,-42.470531043213,64.28512278429,0.85355339059327
+-19.999999552965,-39.99999910593,79.999998211861,1
+-19.999999552965,-46.671885824454,72.551110835558,1
+-19.999999552965,-39.99999910593,79.999998211861,1
+-17.071069546299,-37.203371614257,59.567385857538,0.85355339059327
+-19.999999552965,-39.99999910593,79.999998211861,1
+-17.071069546299,-30.142983691691,59.955886234582,0.85355339059327
+-19.999999552965,-39.99999910593,79.999998211861,1
+-19.999999552965,-32.551111729628,73.328111493337,1
+-19.999999552965,-39.99999910593,79.999998211861,1
+-17.071069546299,-25.425246764939,65.223045663538,0.85355339059327
+-19.999999552965,-39.99999910593,79.999998211861,1
+-17.071069546299,-25.813747141984,72.283433586104,0.85355339059327
+-19.999999552965,-39.99999910593,79.999998211861,1
+-19.999999552965,-33.328112387406,87.448885588163,1
+define_surface name FRAC15_S0 family FRAC15_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+39.99999910593,0,79.999998211861,1
+39.99999910593,9.9994766551124,79.897713542858,1
+39.99999910593,0,79.999998211861,1
+34.142139092598,8.5712513570891,71.732322062131,0.85355339059327
+39.99999910593,0,79.999998211861,1
+34.142139092598,3.6226547506432,76.783203350258,0.85355339059327
+39.99999910593,0,79.999998211861,1
+39.99999910593,0.1022846690025,89.999474866973,1
+39.99999910593,0,79.999998211861,1
+34.142139092598,-3.4480438769342,76.855529542286,0.85355339059327
+39.99999910593,0,79.999998211861,1
+34.142139092598,-8.498925165061,71.90693293584,0.85355339059327
+39.99999910593,0,79.999998211861,1
+39.99999910593,-9.9994766551124,80.102282880863,1
+39.99999910593,0,79.999998211861,1
+34.142139092598,-8.5712513570891,64.836234308263,0.85355339059327
+39.99999910593,0,79.999998211861,1
+34.142139092598,-3.6226547506432,59.785353020136,0.85355339059327
+39.99999910593,0,79.999998211861,1
+39.99999910593,-0.1022846690025,70.000521556748,1
+39.99999910593,0,79.999998211861,1
+34.142139092598,3.4480438769342,59.713026828108,0.85355339059327
+39.99999910593,0,79.999998211861,1
+34.142139092598,8.498925165061,64.661623434554,0.85355339059327
+39.99999910593,0,79.999998211861,1
+39.99999910593,9.9994766551124,79.897713542858,1
+define_surface name FRAC16_S0 family FRAC16_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+39.99999910593,19.999999552965,79.999998211861,1
+39.99999910593,28.252906206672,85.64707951948,1
+39.99999910593,19.999999552965,79.999998211861,1
+34.142139092598,22.118821885237,76.022207671075,0.85355339059327
+39.99999910593,19.999999552965,79.999998211861,1
+34.142139092598,15.168827043105,77.325120505617,0.85355339059327
+39.99999910593,19.999999552965,79.999998211861,1
+39.99999910593,14.352918245346,88.252904865567,1
+39.99999910593,19.999999552965,79.999998211861,1
+34.142139092598,9.3331400604216,73.332030524135,0.85355339059327
+39.99999910593,19.999999552965,79.999998211861,1
+34.142139092598,8.0302272258787,66.382035682003,0.85355339059327
+39.99999910593,19.999999552965,79.999998211861,1
+39.99999910593,11.747092899259,74.352916904242,1
+39.99999910593,19.999999552965,79.999998211861,1
+34.142139092598,12.023317207361,60.546348699319,0.85355339059327
+39.99999910593,19.999999552965,79.999998211861,1
+34.142139092598,18.973312049494,59.243435864776,0.85355339059327
+39.99999910593,19.999999552965,79.999998211861,1
+39.99999910593,25.647080860584,71.747091558154,1
+39.99999910593,19.999999552965,79.999998211861,1
+34.142139092598,24.808999032177,63.236525846259,0.85355339059327
+39.99999910593,19.999999552965,79.999998211861,1
+34.142139092598,26.11191186672,70.186520688391,0.85355339059327
+39.99999910593,19.999999552965,79.999998211861,1
+39.99999910593,28.252906206672,85.64707951948,1
+define_surface name FRAC17_S0 family FRAC17_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+39.99999910593,39.99999910593,79.999998211861,1
+39.99999910593,45.436756180254,88.392951687512,1
+39.99999910593,39.99999910593,79.999998211861,1
+34.142139092598,35.815344576209,77.370297105125,0.85355339059327
+39.99999910593,39.99999910593,79.999998211861,1
+34.142139092598,28.900488444108,75.892198721246,0.85355339059327
+39.99999910593,39.99999910593,79.999998211861,1
+39.99999910593,31.607045630279,85.436755286184,1
+39.99999910593,39.99999910593,79.999998211861,1
+34.142139092598,25.056120172671,69.957483668807,0.85355339059327
+39.99999910593,39.99999910593,79.999998211861,1
+34.142139092598,26.534218556549,63.042627536706,0.85355339059327
+39.99999910593,39.99999910593,79.999998211861,1
+39.99999910593,34.563242031607,71.607044736209,1
+39.99999910593,39.99999910593,79.999998211861,1
+34.142139092598,32.468933608988,59.198259265269,0.85355339059327
+39.99999910593,39.99999910593,79.999998211861,1
+34.142139092598,39.383789741089,60.676357649147,0.85355339059327
+39.99999910593,39.99999910593,79.999998211861,1
+39.99999910593,48.392952581582,74.563241137537,1
+39.99999910593,39.99999910593,79.999998211861,1
+34.142139092598,43.228158012526,66.611072701586,0.85355339059327
+39.99999910593,39.99999910593,79.999998211861,1
+34.142139092598,41.750059628648,73.525928833688,0.85355339059327
+39.99999910593,39.99999910593,79.999998211861,1
+39.99999910593,45.436756180254,88.392951687512,1
+define_surface name FRAC18_S0 family FRAC18_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+39.99999910593,-19.999999552965,79.999998211861,1
+39.99999910593,-10.01890594073,80.61462479236,1
+39.99999910593,-19.999999552965,79.999998211861,1
+34.142139092598,-8.7689755341663,72.337744777803,0.85355339059327
+39.99999910593,-19.999999552965,79.999998211861,1
+34.142139092598,-14.066836287217,77.020978874169,0.85355339059327
+39.99999910593,-19.999999552965,79.999998211861,1
+39.99999910593,-20.614626133465,89.981091824096,1
+39.99999910593,-19.999999552965,79.999998211861,1
+34.142139092598,-21.124536138905,76.58637219733,0.85355339059327
+39.99999910593,-19.999999552965,79.999998211861,1
+34.142139092598,-25.807770235271,71.28851144428,0.85355339059327
+39.99999910593,-19.999999552965,79.999998211861,1
+39.99999910593,-29.9810931652,79.385371631361,1
+39.99999910593,-19.999999552965,79.999998211861,1
+34.142139092598,-25.373163558432,64.230811592591,0.85355339059327
+39.99999910593,-19.999999552965,79.999998211861,1
+34.142139092598,-20.075302805382,59.547577496225,0.85355339059327
+39.99999910593,-19.999999552965,79.999998211861,1
+39.99999910593,-19.385372972466,70.018904599626,1
+39.99999910593,-19.999999552965,79.999998211861,1
+34.142139092598,-13.017602953693,59.982184173064,0.85355339059327
+39.99999910593,-19.999999552965,79.999998211861,1
+34.142139092598,-8.334368857327,65.280044926114,0.85355339059327
+39.99999910593,-19.999999552965,79.999998211861,1
+39.99999910593,-10.01890594073,80.61462479236,1
+define_surface name FRAC19_S0 family FRAC19_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+39.99999910593,-39.99999910593,79.999998211861,1
+39.99999910593,-30.855746709541,75.952450356582,1
+39.99999910593,-39.99999910593,79.999998211861,1
+34.142139092598,-24.906006042555,68.062461401425,0.85355339059327
+39.99999910593,-39.99999910593,79.999998211861,1
+34.142139092598,-27.454358628985,74.658362344837,0.85355339059327
+39.99999910593,-39.99999910593,79.999998211861,1
+39.99999910593,-35.952451250652,89.14425060825,1
+39.99999910593,-39.99999910593,79.999998211861,1
+34.142139092598,-33.920322308826,77.52041123524,0.85355339059327
+39.99999910593,-39.99999910593,79.999998211861,1
+34.142139092598,-40.516223252239,74.97205864881,0.85355339059327
+39.99999910593,-39.99999910593,79.999998211861,1
+39.99999910593,-49.14425150232,84.047546067139,1
+39.99999910593,-39.99999910593,79.999998211861,1
+34.142139092598,-43.378272142642,68.506094968969,0.85355339059327
+39.99999910593,-39.99999910593,79.999998211861,1
+34.142139092598,-40.829919556212,61.910194025556,0.85355339059327
+39.99999910593,-39.99999910593,79.999998211861,1
+39.99999910593,-44.047546961209,70.855745815471,1
+39.99999910593,-39.99999910593,79.999998211861,1
+34.142139092598,-34.363955876371,59.048145135154,0.85355339059327
+39.99999910593,-39.99999910593,79.999998211861,1
+34.142139092598,-27.768054932958,61.596497721584,0.85355339059327
+39.99999910593,-39.99999910593,79.999998211861,1
+39.99999910593,-30.855746709541,75.952450356582,1
+define_surface name FRAC1_S0 family FRAC1_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+0,19.999999552965,79.999998211861,1
+0,27.751874531899,86.317310127591,1
+0,19.999999552965,79.999998211861,1
+0,21.454202214082,76.41714388065,0.85355339059327
+0,19.999999552965,79.999998211861,1
+0,14.419607894795,77.134425501161,0.85355339059327
+0,19.999999552965,79.999998211861,1
+0,13.682687637235,87.751873190795,1
+0,19.999999552965,79.999998211861,1
+0,8.9382038508462,72.66741085298,0.85355339059327
+0,19.999999552965,79.999998211861,1
+0,8.2209222303351,65.632816533692,0.85355339059327
+0,19.999999552965,79.999998211861,1
+0,12.248124574031,73.682686296131,1
+0,19.999999552965,79.999998211861,1
+0,12.687936878516,60.151412489744,0.85355339059327
+0,19.999999552965,79.999998211861,1
+0,19.722531197804,59.434130869233,0.85355339059327
+0,19.999999552965,79.999998211861,1
+0,26.317311468695,72.248123232926,1
+0,19.999999552965,79.999998211861,1
+0,25.203935241752,63.901145517414,0.85355339059327
+0,19.999999552965,79.999998211861,1
+0,25.921216862263,70.935739836701,0.85355339059327
+0,19.999999552965,79.999998211861,1
+0,27.751874531899,86.317310127591,1
+define_surface name FRAC20_S0 family FRAC20_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+-39.99999910593,0,79.999998211861,1
+-39.99999910593,1.2872966931171,89.916795212583,1
+-39.99999910593,0,79.999998211861,1
+-34.142139092598,-2.4073410447171,77.203923105152,0.85355339059327
+-39.99999910593,0,79.999998211861,1
+-34.142139092598,-8.0093885860248,72.889172416525,0.85355339059327
+-39.99999910593,0,79.999998211861,1
+-39.99999910593,-9.9167970007226,81.287294904978,1
+-39.99999910593,0,79.999998211861,1
+-34.142139092598,-8.9196449199554,65.87693714048,0.85355339059327
+-39.99999910593,0,79.999998211861,1
+-34.142139092598,-4.6048942313285,60.274889599172,0.85355339059327
+-39.99999910593,0,79.999998211861,1
+-39.99999910593,-1.2872966931171,70.083201211138,1
+-39.99999910593,0,79.999998211861,1
+-34.142139092598,2.4073410447171,59.364633265242,0.85355339059327
+-39.99999910593,0,79.999998211861,1
+-34.142139092598,8.0093885860248,63.679383953868,0.85355339059327
+-39.99999910593,0,79.999998211861,1
+-39.99999910593,9.9167970007226,78.712701518744,1
+-39.99999910593,0,79.999998211861,1
+-34.142139092598,8.9196449199554,70.691619229914,0.85355339059327
+-39.99999910593,0,79.999998211861,1
+-34.142139092598,4.6048942313285,76.293666771222,0.85355339059327
+-39.99999910593,0,79.999998211861,1
+-39.99999910593,1.2872966931171,89.916795212583,1
+define_surface name FRAC21_S0 family FRAC21_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+-39.99999910593,19.999999552965,79.999998211861,1
+-39.99999910593,23.034491162779,89.528474280972,1
+-39.99999910593,19.999999552965,79.999998211861,1
+-34.142139092598,16.292345030637,77.490197179647,0.85355339059327
+-39.99999910593,19.999999552965,79.999998211861,1
+-34.142139092598,10.010860412568,74.243204547525,0.85355339059327
+-39.99999910593,19.999999552965,79.999998211861,1
+-39.99999910593,10.471523483854,83.034489821674,1
+-39.99999910593,19.999999552965,79.999998211861,1
+-34.142139092598,7.8651505518494,67.505553669534,0.85355339059327
+-39.99999910593,19.999999552965,79.999998211861,1
+-34.142139092598,11.112143183971,61.224069051466,0.85355339059327
+-39.99999910593,19.999999552965,79.999998211861,1
+-39.99999910593,16.965507943151,70.47152214275,1
+-39.99999910593,19.999999552965,79.999998211861,1
+-34.142139092598,17.849794061962,59.078359190747,0.85355339059327
+-39.99999910593,19.999999552965,79.999998211861,1
+-34.142139092598,24.13127868003,62.325351822869,0.85355339059327
+-39.99999910593,19.999999552965,79.999998211861,1
+-39.99999910593,29.528475622076,76.965506602047,1
+-39.99999910593,19.999999552965,79.999998211861,1
+-34.142139092598,26.276988540749,69.06300270086,0.85355339059327
+-39.99999910593,19.999999552965,79.999998211861,1
+-34.142139092598,23.029995908628,75.344487318928,0.85355339059327
+-39.99999910593,19.999999552965,79.999998211861,1
+-39.99999910593,23.034491162779,89.528474280972,1
+define_surface name FRAC22_S0 family FRAC22_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+-39.99999910593,39.99999910593,79.999998211861,1
+-39.99999910593,48.559662198396,85.170313799244,1
+-39.99999910593,39.99999910593,79.999998211861,1
+-34.142139092598,39.620286620182,75.72371741606,0.85355339059327
+-39.99999910593,39.99999910593,79.999998211861,1
+-34.142139092598,32.755296429325,77.41839137866,0.85355339059327
+-39.99999910593,39.99999910593,79.999998211861,1
+-39.99999910593,34.829683518547,88.559661304326,1
+-39.99999910593,39.99999910593,79.999998211861,1
+-34.142139092598,26.702699861736,73.76242571278,0.85355339059327
+-39.99999910593,39.99999910593,79.999998211861,1
+-34.142139092598,25.008025899136,66.897435521923,0.85355339059327
+-39.99999910593,39.99999910593,79.999998211861,1
+-39.99999910593,31.440336013465,74.829682624477,1
+-39.99999910593,39.99999910593,79.999998211861,1
+-34.142139092598,28.663991565015,60.844838954334,0.85355339059327
+-39.99999910593,39.99999910593,79.999998211861,1
+-34.142139092598,35.528981755872,59.150164991734,0.85355339059327
+-39.99999910593,39.99999910593,79.999998211861,1
+-39.99999910593,45.170314693314,71.440335119395,1
+-39.99999910593,39.99999910593,79.999998211861,1
+-34.142139092598,41.581578323461,62.806130657614,0.85355339059327
+-39.99999910593,39.99999910593,79.999998211861,1
+-34.142139092598,43.276252286061,69.671120848471,0.85355339059327
+-39.99999910593,39.99999910593,79.999998211861,1
+-39.99999910593,48.559662198396,85.170313799244,1
+define_surface name FRAC23_S0 family FRAC23_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+-39.99999910593,-19.999999552965,79.999998211861,1
+-39.99999910593,-12.505717968399,86.620854581009,1
+-39.99999910593,-19.999999552965,79.999998211861,1
+-34.142139092598,-13.015125804931,76.585162280914,0.85355339059327
+-39.99999910593,-19.999999552965,79.999998211861,1
+-34.142139092598,-20.072695656592,77.021874942754,0.85355339059327
+-39.99999910593,-19.999999552965,79.999998211861,1
+-39.99999910593,-26.620855922113,87.494279796426,1
+-39.99999910593,-19.999999552965,79.999998211861,1
+-34.142139092598,-25.371953642016,72.340221926565,0.85355339059327
+-39.99999910593,-19.999999552965,79.999998211861,1
+-34.142139092598,-25.808666303856,65.282652074904,0.85355339059327
+-39.99999910593,-19.999999552965,79.999998211861,1
+-39.99999910593,-27.494281137531,73.379141842712,1
+-39.99999910593,-19.999999552965,79.999998211861,1
+-34.142139092598,-21.127013287667,59.98339408948,0.85355339059327
+-39.99999910593,-19.999999552965,79.999998211861,1
+-34.142139092598,-14.069443436007,59.54668142764,0.85355339059327
+-39.99999910593,-19.999999552965,79.999998211861,1
+-39.99999910593,-13.379143183817,72.505716627295,1
+-39.99999910593,-19.999999552965,79.999998211861,1
+-34.142139092598,-8.7701854505824,64.228334443829,0.85355339059327
+-39.99999910593,-19.999999552965,79.999998211861,1
+-34.142139092598,-8.333472788742,71.28590429549,0.85355339059327
+-39.99999910593,-19.999999552965,79.999998211861,1
+-39.99999910593,-12.505717968399,86.620854581009,1
+define_surface name FRAC24_S0 family FRAC24_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+-39.99999910593,-39.99999910593,79.999998211861,1
+-39.99999910593,-32.365537834434,86.458712992966,1
+-39.99999910593,-39.99999910593,79.999998211861,1
+-34.142139092598,-29.909218774013,76.496326771279,0.85355339059327
+-39.99999910593,-39.99999910593,79.999998211861,1
+-34.142139092598,-36.955807673757,77.084200089343,0.85355339059327
+-39.99999910593,-39.99999910593,79.999998211861,1
+-39.99999910593,-46.458713887036,87.634459483357,1
+-39.99999910593,-39.99999910593,79.999998211861,1
+-34.142139092598,-42.354187678681,72.517198503782,0.85355339059327
+-39.99999910593,-39.99999910593,79.999998211861,1
+-34.142139092598,-42.942060996744,65.470609604039,0.85355339059327
+-39.99999910593,-39.99999910593,79.999998211861,1
+-39.99999910593,-47.634460377427,73.541283430755,1
+-39.99999910593,-39.99999910593,79.999998211861,1
+-34.142139092598,-38.375059411183,60.072229599115,0.85355339059327
+-39.99999910593,-39.99999910593,79.999998211861,1
+-34.142139092598,-31.32847051144,59.484356281051,0.85355339059327
+-39.99999910593,-39.99999910593,79.999998211861,1
+-39.99999910593,-33.541284324825,72.365536940364,1
+-39.99999910593,-39.99999910593,79.999998211861,1
+-34.142139092598,-25.930090506516,64.051357866612,0.85355339059327
+-39.99999910593,-39.99999910593,79.999998211861,1
+-34.142139092598,-25.342217188452,71.097946766355,0.85355339059327
+-39.99999910593,-39.99999910593,79.999998211861,1
+-39.99999910593,-32.365537834434,86.458712992966,1
+define_surface name FRAC2_S0 family FRAC2_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+0,39.99999910593,79.999998211861,1
+0,47.335129995206,86.796751140049,1
+0,39.99999910593,79.999998211861,1
+0,38.000050368997,76.679031128977,0.85355339059327
+0,39.99999910593,79.999998211861,1
+0,30.934107584424,76.948220142887,0.85355339059327
+0,39.99999910593,79.999998211861,1
+0,33.203246177742,87.335129101137,1
+0,39.99999910593,79.999998211861,1
+0,25.747386148819,72.142189461596,0.85355339059327
+0,39.99999910593,79.999998211861,1
+0,25.478197134908,65.076246677022,0.85355339059327
+0,39.99999910593,79.999998211861,1
+0,32.664868216654,73.203245283672,1
+0,39.99999910593,79.999998211861,1
+0,30.2842278162,59.889525241417,0.85355339059327
+0,39.99999910593,79.999998211861,1
+0,37.350170600773,59.620336227507,0.85355339059327
+0,39.99999910593,79.999998211861,1
+0,46.796752034119,72.664867322585,1
+0,39.99999910593,79.999998211861,1
+0,42.536892036378,64.426366908798,0.85355339059327
+0,39.99999910593,79.999998211861,1
+0,42.806081050289,71.492309693372,0.85355339059327
+0,39.99999910593,79.999998211861,1
+0,47.335129995206,86.796751140049,1
+define_surface name FRAC3_S0 family FRAC3_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+0,-19.999999552965,79.999998211861,1
+0,-12.179284067965,86.231884349487,1
+0,-19.999999552965,79.999998211861,1
+0,-12.598975246634,76.368567206414,0.85355339059327
+0,-19.999999552965,79.999998211861,1
+0,-19.625276928874,77.16298197857,0.85355339059327
+0,-19.999999552965,79.999998211861,1
+0,-26.231885690591,87.820713696861,1
+0,-19.999999552965,79.999998211861,1
+0,-25.155358567516,72.756372484862,0.85355339059327
+0,-19.999999552965,79.999998211861,1
+0,-25.949773339673,65.730070802622,0.85355339059327
+0,-19.999999552965,79.999998211861,1
+0,-27.820715037965,73.768112074235,1
+0,-19.999999552965,79.999998211861,1
+0,-21.543163845965,60.19998916398,0.85355339059327
+0,-19.999999552965,79.999998211861,1
+0,-14.516862163724,59.405574391823,0.85355339059327
+0,-19.999999552965,79.999998211861,1
+0,-13.768113415339,72.179282726861,1
+0,-19.999999552965,79.999998211861,1
+0,-8.9867805250824,63.812183885531,0.85355339059327
+0,-19.999999552965,79.999998211861,1
+0,-8.1923657529258,70.838485567772,0.85355339059327
+0,-19.999999552965,79.999998211861,1
+0,-12.179284067965,86.231884349487,1
+define_surface name FRAC4_S0 family FRAC4_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+0,-39.99999910593,79.999998211861,1
+0,-30.835571419818,84.001655458012,1
+0,-39.99999910593,79.999998211861,1
+0,-27.73460946141,74.940021601909,0.85355339059327
+0,-39.99999910593,79.999998211861,1
+0,-34.317652743527,77.521407141859,0.85355339059327
+0,-39.99999910593,79.999998211861,1
+0,-44.001656352082,89.164425897973,1
+0,-39.99999910593,79.999998211861,1
+0,-40.797882509311,74.691807816385,0.85355339059327
+0,-39.99999910593,79.999998211861,1
+0,-43.379268049261,68.108764534269,0.85355339059327
+0,-39.99999910593,79.999998211861,1
+0,-49.164426792042,75.998340965709,1
+0,-39.99999910593,79.999998211861,1
+0,-40.549668723787,61.628534768484,0.85355339059327
+0,-39.99999910593,79.999998211861,1
+0,-33.96662544167,59.047149228535,0.85355339059327
+0,-39.99999910593,79.999998211861,1
+0,-35.998341859779,70.835570525749,1
+0,-39.99999910593,79.999998211861,1
+0,-27.486395675886,61.876748554009,0.85355339059327
+0,-39.99999910593,79.999998211861,1
+0,-24.905010135936,68.459791836125,0.85355339059327
+0,-39.99999910593,79.999998211861,1
+0,-30.835571419818,84.001655458012,1
+define_surface name FRAC5_S0 family FRAC5_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+19.999999552965,0,79.999998211861,1
+19.999999552965,7.7453604085222,86.325295649274,1
+19.999999552965,0,79.999998211861,1
+17.071069546299,4.3747488248137,76.42165670186,0.85355339059327
+19.999999552965,0,79.999998211861,1
+17.071069546299,-2.6605809702009,77.131688275425,0.85355339059327
+19.999999552965,0,79.999998211861,1
+19.999999552965,-6.3252974374134,87.745358620383,1
+19.999999552965,0,79.999998211861,1
+17.071069546299,-8.1373785166635,72.659027010011,0.85355339059327
+19.999999552965,0,79.999998211861,1
+17.071069546299,-8.8474100902281,65.623697214996,0.85355339059327
+19.999999552965,0,79.999998211861,1
+19.999999552965,-7.7453604085222,73.674700774447,1
+19.999999552965,0,79.999998211861,1
+17.071069546299,-4.3747488248137,60.146899668533,0.85355339059327
+19.999999552965,0,79.999998211861,1
+17.071069546299,2.6605809702009,59.436868094969,0.85355339059327
+19.999999552965,0,79.999998211861,1
+19.999999552965,6.3252974374134,72.254637803338,1
+19.999999552965,0,79.999998211861,1
+17.071069546299,8.1373785166635,63.909529360383,0.85355339059327
+19.999999552965,0,79.999998211861,1
+17.071069546299,8.8474100902281,70.944859155398,0.85355339059327
+19.999999552965,0,79.999998211861,1
+19.999999552965,7.7453604085222,86.325295649274,1
+define_surface name FRAC6_S0 family FRAC6_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+19.999999552965,19.999999552965,79.999998211861,1
+19.999999552965,24.590770144083,88.883962468283,1
+19.999999552965,19.999999552965,79.999998211861,1
+17.071069546299,17.84858176139,77.49029964721,0.85355339059327
+19.999999552965,19.999999552965,79.999998211861,1
+17.071069546299,11.111213502507,75.343702548482,0.85355339059327
+19.999999552965,19.999999552965,79.999998211861,1
+19.999999552965,11.116035296543,84.590768802978,1
+19.999999552965,19.999999552965,79.999998211861,1
+17.071069546299,7.8650480842859,69.061790400288,0.85355339059327
+19.999999552965,19.999999552965,79.999998211861,1
+17.071069546299,10.011645183014,62.324422141405,0.85355339059327
+19.999999552965,19.999999552965,79.999998211861,1
+19.999999552965,15.409228961848,71.116033955439,1
+19.999999552965,19.999999552965,79.999998211861,1
+17.071069546299,16.293557331208,59.078256723184,0.85355339059327
+19.999999552965,19.999999552965,79.999998211861,1
+17.071069546299,23.030925590091,61.224853821912,0.85355339059327
+19.999999552965,19.999999552965,79.999998211861,1
+19.999999552965,28.883963809387,75.409227620743,1
+19.999999552965,19.999999552965,79.999998211861,1
+17.071069546299,26.277091008312,67.506765970106,0.85355339059327
+19.999999552965,19.999999552965,79.999998211861,1
+17.071069546299,24.130493909584,74.244134228989,0.85355339059327
+19.999999552965,19.999999552965,79.999998211861,1
+19.999999552965,24.590770144083,88.883962468283,1
+define_surface name FRAC7_S0 family FRAC7_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+19.999999552965,39.99999910593,79.999998211861,1
+19.999999552965,35.727607154257,70.95861211564,1
+19.999999552965,39.99999910593,79.999998211861,1
+17.071069546299,33.692037110494,59.056452622835,0.85355339059327
+19.999999552965,39.99999910593,79.999998211861,1
+17.071069546299,40.348926959579,61.440949990673,0.85355339059327
+19.999999552965,39.99999910593,79.999998211861,1
+19.999999552965,49.041385202151,75.727606260187,1
+19.999999552965,39.99999910593,79.999998211861,1
+17.071069546299,43.36996465496,67.834176203093,0.85355339059327
+19.999999552965,39.99999910593,79.999998211861,1
+17.071069546299,40.985467287122,74.491066052178,0.85355339059327
+19.999999552965,39.99999910593,79.999998211861,1
+19.999999552965,44.272391057604,89.041384308081,1
+19.999999552965,39.99999910593,79.999998211861,1
+17.071069546299,34.592241074703,77.512103747558,0.85355339059327
+19.999999552965,39.99999910593,79.999998211861,1
+17.071069546299,27.935351225618,75.127606379721,0.85355339059327
+19.999999552965,39.99999910593,79.999998211861,1
+19.999999552965,30.95861300971,84.272390163534,1
+19.999999552965,39.99999910593,79.999998211861,1
+17.071069546299,24.914313530237,68.734380167301,0.85355339059327
+19.999999552965,39.99999910593,79.999998211861,1
+17.071069546299,27.298810898075,62.077490318216,0.85355339059327
+19.999999552965,39.99999910593,79.999998211861,1
+19.999999552965,35.727607154257,70.95861211564,1
+define_surface name FRAC8_S0 family FRAC8_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+19.999999552965,-19.999999552965,79.999998211861,1
+19.999999552965,-10.897102607761,84.139715923811,1
+19.999999552965,-19.999999552965,79.999998211861,1
+17.071069546299,-10.764871445989,75.036109190436,0.85355339059327
+19.999999552965,-19.999999552965,79.999998211861,1
+17.071069546299,-17.386179595294,77.517699114662,0.85355339059327
+19.999999552965,-19.999999552965,79.999998211861,1
+19.999999552965,-24.139717264916,89.102895157065,1
+19.999999552965,-19.999999552965,79.999998211861,1
+17.071069546299,-23.822900551538,74.590476285507,0.85355339059327
+19.999999552965,-19.999999552965,79.999998211861,1
+17.071069546299,-26.304490475764,67.969168136202,0.85355339059327
+19.999999552965,-19.999999552965,79.999998211861,1
+19.999999552965,-29.10289649817,75.86028049991,1
+19.999999552965,-19.999999552965,79.999998211861,1
+17.071069546299,-23.37726764661,61.532447179958,0.85355339059327
+19.999999552965,-19.999999552965,79.999998211861,1
+17.071069546299,-16.755959497304,59.050857255732,0.85355339059327
+19.999999552965,-19.999999552965,79.999998211861,1
+19.999999552965,-15.860281841014,70.897101266656,1
+19.999999552965,-19.999999552965,79.999998211861,1
+17.071069546299,-10.31923854106,61.978080084887,0.85355339059327
+19.999999552965,-19.999999552965,79.999998211861,1
+17.071069546299,-7.8376486168339,68.599388234192,0.85355339059327
+19.999999552965,-19.999999552965,79.999998211861,1
+19.999999552965,-10.897102607761,84.139715923811,1
+define_surface name FRAC9_S0 family FRAC9_S tetra_size 1e+10
+bspline
+2,13,2,3,1
+0,0,1000,1000
+0,0,0,0.78539816339745,1.5707963267949
+1.5707963267949,2.3561944901923,3.1415926535898,3.1415926535898,3.9269908169872
+4.7123889803847,4.7123889803847,5.4977871437821,6.2831853071796,6.2831853071796
+6.2831853071796
+19.999999552965,-39.99999910593,79.999998211861,1
+19.999999552965,-33.780785963835,87.830795324725,1
+19.999999552965,-39.99999910593,79.999998211861,1
+17.071069546299,-31.602313183824,77.167106606189,0.85355339059327
+19.999999552965,-39.99999910593,79.999998211861,1
+17.071069546299,-38.627319182071,76.361314520925,0.85355339059327
+19.999999552965,-39.99999910593,79.999998211861,1
+19.999999552965,-47.830796218794,86.219211353956,1
+19.999999552965,-39.99999910593,79.999998211861,1
+17.071069546299,-43.024967513591,70.824104093971,0.85355339059327
+19.999999552965,-39.99999910593,79.999998211861,1
+17.071069546299,-42.219175428326,63.799098095725,0.85355339059327
+19.999999552965,-39.99999910593,79.999998211861,1
+19.999999552965,-46.219212248026,72.169201098997,1
+19.999999552965,-39.99999910593,79.999998211861,1
+17.071069546299,-36.681965001373,59.401449764205,0.85355339059327
+19.999999552965,-39.99999910593,79.999998211861,1
+17.071069546299,-29.656959003126,60.207241849469,0.85355339059327
+19.999999552965,-39.99999910593,79.999998211861,1
+19.999999552965,-32.169201993066,73.780785069765,1
+19.999999552965,-39.99999910593,79.999998211861,1
+17.071069546299,-25.259310671606,65.744452276422,0.85355339059327
+19.999999552965,-39.99999910593,79.999998211861,1
+17.071069546299,-26.065102756871,72.769458274669,0.85355339059327
+19.999999552965,-39.99999910593,79.999998211861,1
+19.999999552965,-33.780785963835,87.830795324725,1
+affix 0
+define_model 945.16302 fast_transition reference_size 1
+return
