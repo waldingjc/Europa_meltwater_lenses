@@ -1,0 +1,80 @@
+# DATA ENTRY FOR SATSTRESS MODEL
+# TIDAL_ANALYTICS
+# NAME || VARIABLE NAME || UNITS || COMMENTS
+
+# NSR Rate || b || rad/s || this can also be derived from a given DELTA
+b
+1.7434e-14
+
+# Diurnal Rate || n || rad/s || the below is 2*PI/(seconds/satellite_day)
+n
+2.048508511730434e-05
+
+# Satellite Radius || R_s || m || Europan radius
+R_s
+1.561e6
+
+# Orbital Eccentricity || epsilon || N/A || Europan eccentricity
+epsilon
+0.0094
+
+# Gravitational Constant || G || N.m^2/kg^2 || big G
+G
+6.674e-11
+
+# Mass of Satellite || m || kg || Europan mass
+m
+4.799844e22
+
+# Mass of Parent Body || m_star || kg || Jovian mass
+m_star
+1.8982e27
+
+# Semi-Major Axis of Satellite || a || m || Europa around Jupiter
+a
+6.709e8
+
+# Semi-Major Axis of Parent Body || a_star || m || Jupiter around the Sun
+a_star
+7.78479e11
+
+# Acceleration due to Gravity on Satellite Surface || g || m/s^2 || little g
+g
+1.315
+
+# Lame Parameter mu || mu || Pa || also the shear modulus of ice
+mu
+3.487e9
+
+# Lame Parameter kappa || kappa || Pa || also the bulk modulus of ice
+kappa
+9.3e9
+
+# Viscosity of the Brittle Ice || NU || Pa.s ||
+NU
+1e22
+
+# Diurnal Love Number h || H_DIURNAL || N/A || :complex: should be dynamic with FORTRAN
+H_DIURNAL
+1.192
+-6.293e-5
+
+# NSR Love Number h || H_NSR || N/A || :complex: should be dynamic with FORTRAN
+H_NSR
+1.813
+-4.186e-3
+
+# Diurnal Love Number l || L_DIURNAL || N/A || :complex: should be dynamic with FORTRAN
+L_DIURNAL
+0.3094
+-2.903e-5
+
+# NSR Love Number l || L_NSR || N/A || :complex: should be dynamic with FORTRAN
+L_NSR
+0.4748
+-2.766e-3
+
+# Undefined Love Number || LOVE_BLANK || N/A || shouldn't exist at all - develop
+LOVE_BLANK
+0.
+0.

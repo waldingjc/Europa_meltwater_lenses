@@ -1,0 +1,4 @@
+f
+-radius fixed 1000
+-orientation fixed 1 1 1
+-location fixed -45000 0 8500
